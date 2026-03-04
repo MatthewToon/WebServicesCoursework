@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16
+    container_name: vgsales_db
+    environment:
+      POSTGRES_DB: vgsales_api
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: verysafepassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - vgsales_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app_user -d vgsales_api"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  vgsales_pgdata:
