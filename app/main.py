@@ -1,10 +1,11 @@
-# Main FastAPI application entry point.
+""" 
+Main FastAPI application entry point.
 
-# This file defines the API instance and registers basic health and
-# database connectivity endpoints used during development. These
-# endpoints help verify that the service and database are functioning
-# correctly before implementing the full API functionality.
-
+This file defines the API instance and registers basic health and
+database connectivity endpoints used during development. These
+endpoints help verify that the service and database are functioning
+correctly before implementing the full API functionality.
+"""
 # FastAPI is the web framework used to build the API service
 from fastapi import FastAPI
 
