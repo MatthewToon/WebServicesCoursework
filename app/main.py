@@ -14,6 +14,8 @@ from sqlalchemy import text
 from app.db import engine
 from app.api.publishers import router as publishers_router
 from app.api.catalogue import router as catalogue_router
+from app.api.auth import router as auth_router
+from app.api.dashboards import router as dashboards_router
 
 
 # Human-friendly grouping + descriptions in Swagger UI
@@ -76,3 +78,5 @@ def db_check():
 # Register API routers
 app.include_router(publishers_router)
 app.include_router(catalogue_router)
+app.include_router(auth_router)
+app.include_router(dashboards_router)
