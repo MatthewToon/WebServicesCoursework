@@ -16,6 +16,8 @@ from app.api.publishers import router as publishers_router
 from app.api.catalogue import router as catalogue_router
 from app.api.auth import router as auth_router
 from app.api.dashboards import router as dashboards_router
+from app.api.analytics import router as analytics_router
+from app.api.renderer import router as renderer_router
 
 
 # Human-friendly grouping + descriptions in Swagger UI
@@ -80,3 +82,5 @@ app.include_router(publishers_router)
 app.include_router(catalogue_router)
 app.include_router(auth_router)
 app.include_router(dashboards_router)
+app.include_router(analytics_router)
+app.include_router(renderer_router)
