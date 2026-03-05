@@ -1,14 +1,26 @@
-from pydantic import BaseModel
-from app.schemas.catalogue import PageMeta
+"""
+Publisher response schemas.
+
+Defines the Pydantic models used by publisher endpoints. These schemas
+control what fields appear in API responses and improve Swagger documentation
+with descriptions and example values.
+"""
+
+from pydantic import BaseModel, Field
+from typing import List
+
+from app.schemas.common import PageMeta
+
 
 class PublisherOut(BaseModel):
-    id: int
-    name: str
-    slug: str
+    id: int = Field(..., example=1, description="Internal numeric identifier.")
+    name: str = Field(..., example="Nintendo", description="Canonical publisher name.")
+    slug: str = Field(..., example="nintendo", description="URL-safe unique identifier.")
 
     class Config:
-        from_attributes = True  # pydantic v2 ORM mode
+        from_attributes = True
+
 
 class PublisherListOut(BaseModel):
-    items: list[PublisherOut]
-    meta: PageMeta
+    items: List[PublisherOut] = Field(..., description="Publishers on the current page.")
+    meta: PageMeta = Field(..., description="Pagination metadata for the result set.")
