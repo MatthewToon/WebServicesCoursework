@@ -163,6 +163,7 @@ def publisher_hit_rate(
     threshold: float = 1.0,
     min_titles: int = 10,
     region: Literal["na", "eu", "jp", "other", "global"] = "global",
+    limit: int = 50,
 ) -> dict:
     """
     Hit rate leaderboard:
@@ -200,6 +201,7 @@ def publisher_hit_rate(
         .join(total_q, total_q.c.publisher_id == Publisher.id)
         .outerjoin(hits_q, hits_q.c.publisher_id == Publisher.id)
         .filter(total_q.c.total >= min_titles)
+        .limit(limit)
         .all()
     )
 
@@ -238,6 +240,7 @@ def publisher_efficiency(
     db: Session,
     metric: Literal["mean", "median"] = "mean",
     min_titles: int = 10,
+    limit: int = 50,
 ) -> dict:
     """
     Sales efficiency ranking:
@@ -255,6 +258,7 @@ def publisher_efficiency(
             .join(Game, Game.publisher_id == Publisher.id)
             .group_by(Publisher.id)
             .having(func.count(Game.id) >= min_titles)
+            .limit(limit)
             .all()
         )
         items = [
@@ -282,6 +286,7 @@ def publisher_efficiency(
         .join(Game, Game.publisher_id == Publisher.id)
         .group_by(Publisher.id)
         .having(func.count(Game.id) >= min_titles)
+        .limit(limit)
         .all()
     )
 
@@ -315,6 +320,7 @@ def publisher_regional_bias(
     db: Session,
     region: Literal["na", "eu", "jp", "other"] = "jp",
     min_titles: int = 10,
+    limit: int = 50,
 ) -> dict:
     """
     Regional bias index:
@@ -345,6 +351,7 @@ def publisher_regional_bias(
         .join(Game, Game.publisher_id == Publisher.id)
         .group_by(Publisher.id)
         .having(func.count(Game.id) >= min_titles)
+        .limit(limit)
         .all()
     )
 
@@ -393,6 +400,7 @@ def publisher_momentum(
     window: int = 5,
     region: Literal["na", "eu", "jp", "other", "global"] = "global",
     min_titles: int = 10,
+    limit: int = 50,
 ) -> dict:
     """
     Momentum score:
@@ -455,6 +463,7 @@ def publisher_momentum(
         .outerjoin(last_q, last_q.c.publisher_id == Publisher.id)
         .outerjoin(prev_q, prev_q.c.publisher_id == Publisher.id)
         .filter(totals_q.c.total >= min_titles)
+        .limit(limit)
         .all()
     )
 
