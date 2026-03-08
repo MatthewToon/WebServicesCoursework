@@ -270,8 +270,9 @@ def publisher_efficiency(
             }
             for slug, name, total, value in q
         ]
+
         items.sort(key=lambda x: x["mean_global_sales"], reverse=True)
-        return {"metric": "mean", "min_titles": min_titles, "items": items}
+        return {"metric": "mean", "min_titles": min_titles, "items": items[:limit]}
 
     # Median using PostgreSQL percentile_cont (works in Postgres)
     median_expr = func.percentile_cont(0.5).within_group(Game.global_sales)
@@ -299,17 +300,19 @@ def publisher_efficiency(
         }
         for slug, name, total, value in q
     ]
+
     items.sort(key=lambda x: x["median_global_sales"], reverse=True)
-    return {"metric": "median", "min_titles": min_titles, "items": items}
+    return {"metric": "median", "min_titles": min_titles, "items": items[:limit]}
 
 
 @router.get("/publisher-efficiency", summary="Publisher efficiency ranking")
 def publisher_efficiency_endpoint(
     metric: Literal["mean", "median"] = Query("mean"),
     min_titles: int = Query(10, ge=1),
+    limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),
 ):
-    return publisher_efficiency(db=db, metric=metric, min_titles=min_titles)
+    return publisher_efficiency(db=db, metric=metric, min_titles=min_titles, limit=limit)
 
 
 # ---------------------------
@@ -379,16 +382,17 @@ def publisher_regional_bias(
         )
 
     items.sort(key=lambda x: x["bias_index"], reverse=True)
-    return {"region": region, "min_titles": min_titles, "items": items}
+    return {"region": region, "min_titles": min_titles, "items": items[:limit]}
 
 
 @router.get("/publisher-regional-bias", summary="Publisher regional bias index")
 def publisher_regional_bias_endpoint(
     region: Literal["na", "eu", "jp", "other"] = Query("jp"),
     min_titles: int = Query(10, ge=1),
+    limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),
 ):
-    return publisher_regional_bias(db=db, region=region, min_titles=min_titles)
+    return publisher_regional_bias(db=db, region=region, min_titles=min_titles, limit=limit)
 
 
 # ---------------------------
@@ -486,14 +490,154 @@ def publisher_momentum(
         )
 
     items.sort(key=lambda x: x["momentum"], reverse=True)
-    return {"window": window, "region": region, "min_titles": min_titles, "items": items}
-
+    return {"window": window, "region": region, "min_titles": min_titles, "items": items[:limit]}
 
 @router.get("/publisher-momentum", summary="Publisher momentum score")
 def publisher_momentum_endpoint(
     window: int = Query(5, ge=1, le=30),
     region: Literal["na", "eu", "jp", "other", "global"] = Query("global"),
     min_titles: int = Query(10, ge=1),
+    limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),
 ):
-    return publisher_momentum(db=db, window=window, region=region, min_titles=min_titles)
+    return publisher_momentum(db=db, window=window, region=region, min_titles=min_titles, limit=limit)
+
+# ---------------------------
+# 6) Publisher comparison
+# ---------------------------
+
+def publisher_comparison(
+    db: Session,
+    a_slug: str,
+    b_slug: str,
+    from_year: int | None = None,
+    to_year: int | None = None,
+) -> dict:
+    """
+    Side-by-side comparison of two publishers over an optional year window.
+
+    Returns:
+    - window (from_year/to_year)
+    - summary for publisher A and B (title_count, sales totals, top genre/platform)
+    - simple deltas (global sales + title count)
+    """
+    if a_slug == b_slug:
+        raise HTTPException(status_code=400, detail="a_slug and b_slug must be different")
+
+    a_pub = db.query(Publisher).filter(Publisher.slug == a_slug).first()
+    if not a_pub:
+        raise HTTPException(status_code=404, detail=f"Publisher not found: {a_slug}")
+
+    b_pub = db.query(Publisher).filter(Publisher.slug == b_slug).first()
+    if not b_pub:
+        raise HTTPException(status_code=404, detail=f"Publisher not found: {b_slug}")
+
+    # Build reusable year filters (avoid NULL years when windowing)
+    year_filters = []
+    if from_year is not None:
+        year_filters.append(Game.year.isnot(None))
+        year_filters.append(Game.year >= from_year)
+    if to_year is not None:
+        year_filters.append(Game.year.isnot(None))
+        year_filters.append(Game.year <= to_year)
+
+    def summary_for(publisher_id: int) -> dict:
+        # --- totals ---
+        totals_row = (
+            db.query(
+                func.count(Game.id).label("title_count"),
+                func.coalesce(func.sum(Game.na_sales), 0).label("na"),
+                func.coalesce(func.sum(Game.eu_sales), 0).label("eu"),
+                func.coalesce(func.sum(Game.jp_sales), 0).label("jp"),
+                func.coalesce(func.sum(Game.other_sales), 0).label("other"),
+                func.coalesce(func.sum(Game.global_sales), 0).label("global"),
+            )
+            .filter(Game.publisher_id == publisher_id, *year_filters)
+            .one()
+        )
+
+        # --- top genre by global sales ---
+        top_genre = (
+            db.query(Genre.name)
+            .join(Game, Game.genre_id == Genre.id)
+            .filter(Game.publisher_id == publisher_id, *year_filters)
+            .group_by(Genre.id, Genre.name)
+            .order_by(func.coalesce(func.sum(Game.global_sales), 0).desc())
+            .first()
+        )
+        top_genre_name = top_genre[0] if top_genre else None
+
+        # --- top platform by global sales ---
+        top_platform = (
+            db.query(Platform.name)
+            .join(Game, Game.platform_id == Platform.id)
+            .filter(Game.publisher_id == publisher_id, *year_filters)
+            .group_by(Platform.id, Platform.name)
+            .order_by(func.coalesce(func.sum(Game.global_sales), 0).desc())
+            .first()
+        )
+        top_platform_name = top_platform[0] if top_platform else None
+
+        title_count = int(totals_row.title_count or 0)
+
+        sales = {}
+        sales["na"] = _as_float(totals_row.na)
+        sales["eu"] = _as_float(totals_row.eu)
+        sales["jp"] = _as_float(totals_row.jp)
+        sales["other"] = _as_float(totals_row.other)
+        sales["global"] = _as_float(totals_row._mapping["global"])
+
+        result = {}
+        result["title_count"] = title_count
+        result["sales"] = sales
+        result["top_genre"] = top_genre_name
+        result["top_platform"] = top_platform_name
+
+        return result
+
+    a_sum = summary_for(a_pub.id)
+    b_sum = summary_for(b_pub.id)
+
+    a_global = a_sum["sales"]["global"]
+    b_global = b_sum["sales"]["global"]
+
+    if a_global > b_global:
+        winner = a_pub.slug
+    elif b_global > a_global:
+        winner = b_pub.slug
+    else:
+        winner = None
+
+    return {
+        "window": {"from_year": from_year, "to_year": to_year},
+        "a": {
+            "publisher": {"id": a_pub.id, "name": a_pub.name, "slug": a_pub.slug},
+            **a_sum,
+        },
+        "b": {
+            "publisher": {"id": b_pub.id, "name": b_pub.name, "slug": b_pub.slug},
+            **b_sum,
+        },
+        "comparison": {
+            "global_sales_winner": winner,
+            "global_sales_diff": a_global - b_global,
+            "title_count_diff": a_sum["title_count"] - b_sum["title_count"],
+        },
+    }
+
+
+@router.get("/publisher-comparison", summary="Compare two publishers side-by-side")
+def publisher_comparison_endpoint(
+    a_slug: str = Query(..., description="Publisher A slug"),
+    b_slug: str = Query(..., description="Publisher B slug"),
+    from_year: int | None = Query(None, ge=1950, le=2100),
+    to_year: int | None = Query(None, ge=1950, le=2100),
+    db: Session = Depends(get_db),
+):
+    return publisher_comparison(
+        db=db,
+        a_slug=a_slug,
+        b_slug=b_slug,
+        from_year=from_year,
+        to_year=to_year,
+    )

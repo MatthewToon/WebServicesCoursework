@@ -32,6 +32,7 @@ from app.api.analytics import (
     publisher_efficiency,
     publisher_regional_bias,
     publisher_momentum,
+    publisher_comparison
 )
 
 router = APIRouter(prefix="/dashboards", tags=["renderer"])
@@ -107,9 +108,13 @@ def render_dashboard(
             )
 
         elif params.type == "publisher_comparison":
-            # Not implemented yet (next step after intelligence endpoints).
-            # Keep renderer stable and return a clear message.
-            result = {"detail": "publisher_comparison not implemented yet"}
+            result = publisher_comparison(
+                db=db,
+                a_slug=params.a_slug,
+                b_slug=params.b_slug,
+                from_year=params.from_year,
+                to_year=params.to_year,
+            )
 
         else:
             # Should be unreachable due to strict union validation.
