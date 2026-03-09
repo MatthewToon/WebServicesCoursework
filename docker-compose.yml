@@ -24,7 +24,7 @@ services:
         condition: service_healthy
     environment:
       DATABASE_URL: postgresql+psycopg://app_user:verysafepassword@db:5432/vgsales_api
-      JWT_SECRET_KEY: supersecretkey
+      JWT_SECRET_KEY: /6G1W,mO\M`zu1;Ww2£~rQ3b;_W%Vv\D;z-7X.Q£HG99m\C-=j
       JWT_ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: 60
     ports:
