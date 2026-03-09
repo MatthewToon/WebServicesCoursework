@@ -16,5 +16,22 @@ services:
       timeout: 5s
       retries: 10
 
+  api:
+    build: .
+    container_name: vgsales_api_app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://app_user:verysafepassword@db:5432/vgsales_api
+      JWT_SECRET_KEY: supersecretkey
+      JWT_ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 60
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
 volumes:
   vgsales_pgdata:
