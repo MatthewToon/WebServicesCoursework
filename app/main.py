@@ -39,7 +39,7 @@ openapi_tags = [
 
 app = FastAPI(
     title="Game Publisher Intelligence API",
-    version="0.1.0",
+    version="1.0.0",
     description=(
         "An analytics-focused REST API built on the *Video Game Sales* dataset.\n\n"
         "**Key idea:** dataset tables are read-only; user-created resources (e.g., dashboards) "
