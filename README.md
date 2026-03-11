@@ -52,7 +52,7 @@ Docker will:
 -   Run database migrations
 -   Launch the API server
 
-5. Open the API documentation:
+### 5. Open the API documentation:
 http://127.0.0.1:8000/docs
 
 This opens the Swagger API interface, where the system can be tested
