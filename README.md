@@ -112,8 +112,8 @@ If PowerShell blocks the script, run this first:
     .\.venv\Scripts\Activate.ps1
 
 Then retry the Activate script above.
-If successful, '(.venv) should prefix the terminal prompt:
-e.g. (.venv) PS C:\Users\You\ ...
+If successful, '(.venv) should prefix the terminal prompt: 
+    (.venv) PS C:\Users\You\ ...
 
 
 ## 5. Install Python dependencies
