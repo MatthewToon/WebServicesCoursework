@@ -113,6 +113,7 @@ If PowerShell blocks the script, run this first:
 
 Then retry the Activate script above.
 If successful, '(.venv) should prefix the terminal prompt: 
+
     (.venv) PS C:\Users\You\ ...
 
 
