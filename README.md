@@ -13,6 +13,12 @@ The system allows authenticated users to create **custom dashboards** containing
 
 Dashboards dynamically render analytics results based on stored widget configuration.
 
+## API Documentation
+
+A pdf version of the auto-generated API documentation is available here:
+
+[API Docs (PDF)](docs/api-docs.pdf)
+
 ------------------------------------------------------------------------
 
 # Running the Project
