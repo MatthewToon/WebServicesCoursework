@@ -17,7 +17,13 @@ Dashboards dynamically render analytics results based on stored widget configura
 
 # Running the Project
 
-## Quick Start via Docker (Recommended)
+## Uber-quick Start via Render hosted URL
+
+    https://webservicescoursework.onrender.com/docs
+
+If the applicaiton has not recently been running, there may be a small 'cold start' delay upon instantiation.
+
+## Quick Start via Docker (Recommended for local deployment)
 
 Note: terminal commands have only been tested for validity within PowerShell
 
