@@ -5,6 +5,7 @@ alembic
 psycopg[binary]
 python-jose[cryptography]
 passlib[bcrypt]
+bcrypt==4.3.0
 pytest
 httpx
 python-dotenv
