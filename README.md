@@ -21,7 +21,7 @@ Dashboards dynamically render analytics results based on stored widget configura
 
     https://webservicescoursework.onrender.com/docs
 
-If the applicaiton has not recently been running, there may be a small 'cold start' delay upon instantiation.
+If the application has not recently been running, there may be a small 'cold start' delay upon instantiation.
 
 ## Quick Start via Docker (Recommended for local deployment)
 
