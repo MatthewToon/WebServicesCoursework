@@ -23,7 +23,13 @@ A pdf version of the auto-generated API documentation is available here:
 
 # Running the Project
 
-## Quick Start via Docker (Recommended)
+## Uber-quick Start via Render hosted URL
+
+    https://webservicescoursework.onrender.com/docs
+
+If the application has not recently been running, there may be a small 'cold start' delay upon instantiation.
+
+## Quick Start via Docker (Recommended for local deployment)
 
 Note: terminal commands have only been tested for validity within PowerShell
 
