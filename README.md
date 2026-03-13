@@ -1,6 +1,6 @@
 # Video Game Publisher Analytics API
 
-A RESTful API for analysing video game publisher performance using a historical sales dataset.
+A RESTful API for analysing video game publisher performance using a [historical sales dataset](https://www.datacamp.com/datalab/datasets/dataset-r-video-games-sales).
 
 The system allows authenticated users to create **custom dashboards** containing  the following analytics widgets:
 
