@@ -23,7 +23,9 @@ A pdf version of the auto-generated API documentation is available here:
 
 JSON files containing extracted chat logs are available here:
 
+["GenAI Creative Solutions"](docs/GenAI-Creative-Solutions-chat-log.json)
 ["API Project Ideas"](docs/API-Project-Ideas-chat-log.json)
+["Web Services CW"](docs/Web-Services-CW-chat-log.json)
 
 
 
