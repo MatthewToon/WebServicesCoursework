@@ -1,0 +1,936 @@
+{
+    "async_status": null,
+    "atlas_mode_enabled": null,
+    "blocked_urls": [],
+    "context_scopes": null,
+    "conversation_id": "69a590eb-cbb4-8396-9b7f-41767cb61c28",
+    "conversation_origin": null,
+    "conversation_template_id": null,
+    "create_time": 1772458292.316444,
+    "current_node": "72e6cd80-0d7f-4ac1-9f05-168824a078dc",
+    "default_model_slug": "gpt-5-3",
+    "disabled_tool_ids": [],
+    "gizmo_id": null,
+    "gizmo_type": null,
+    "id": "69a590eb-cbb4-8396-9b7f-41767cb61c28",
+    "is_archived": false,
+    "is_do_not_remember": false,
+    "is_read_only": null,
+    "is_starred": null,
+    "is_study_mode": false,
+    "mapping": {
+      "3235e21d-fd9f-40ac-91c8-44ac36419e82": {
+        "children": [
+          "e58194cd-4f37-45f8-9f6e-4e2780e673c1"
+        ],
+        "id": "3235e21d-fd9f-40ac-91c8-44ac36419e82",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "system"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "create_time": null,
+          "end_turn": true,
+          "id": "3235e21d-fd9f-40ac-91c8-44ac36419e82",
+          "metadata": {
+            "can_save": false,
+            "is_visually_hidden_from_conversation": true,
+            "rebase_developer_message": true
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 0.0
+        },
+        "parent": "edfd2257-1e9f-4fe9-8983-33b94221ade9"
+      },
+      "33e61cfa-f422-4ee1-ba96-c8b9fd6d7eae": {
+        "children": [
+          "e7d52c4a-931b-43dc-b124-bf7249cc42db"
+        ],
+        "id": "33e61cfa-f422-4ee1-ba96-c8b9fd6d7eae",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Perfect \u2014 this is exactly the moment where you can *intentionally* use GenAI in a way that clearly demonstrates \u201ccreative thinking and solution exploration\u201d **before locking the architecture**.\n\nSince you\u2019ve found a clean dataset (great decision, by the way), the high-level use now shifts from:\n\n> \u201cHelp me clean data\u201d\n\nto\n\n> \u201cHelp me stress-test, extend, and challenge this design before implementation.\u201d\n\nBelow are **powerful, distinction-level prompt strategies** you can use right now before committing.\n\n---\n\n# \ud83e\udde0 1\ufe0f\u20e3 Architectural Stress Testing\n\nThis shows maturity and systems thinking.\n\n### \ud83d\udd39 Prompt: Design Weakness Audit\n> \u201cHere is my proposed API concept, schema outline, and endpoints (paste summary). Identify potential architectural weaknesses, scalability concerns, or design flaws. Suggest alternative structures that may be more robust.\u201d\n\nThis demonstrates:\n- Critical evaluation\n- Risk analysis\n- Iterative design refinement\n\nMarkers love this.\n\n---\n\n# \ud83c\udfd7 2\ufe0f\u20e3 Alternative Schema Exploration\n\nEven if you\u2019re confident, explore options.\n\n### \ud83d\udd39 Prompt: Competing Schema Models\n> \u201cGiven this dataset structure, propose three different relational schema designs (minimal, fully normalized, and analytics-optimized). Compare trade-offs in complexity, performance, and extensibility.\u201d\n\nYou don\u2019t have to use all three \u2014 but documenting that you explored alternatives is high-level.\n\n---\n\n# \ud83d\udcca 3\ufe0f\u20e3 Analytics Depth Expansion\n\nPush beyond obvious endpoints.\n\n### \ud83d\udd39 Prompt: Non-Trivial Analytics Ideation\n> \u201cSuggest advanced analytical endpoints for this dataset that go beyond basic filtering. Focus on endpoints that demonstrate aggregation, ranking, trend analysis, or derived metrics.\u201d\n\nYou\u2019re explicitly exploring design space.\n\n---\n\n# \u2696\ufe0f 4\ufe0f\u20e3 REST vs GraphQL Justification Exploration\n\nEven if you stick with REST, this is powerful.\n\n### \ud83d\udd39 Prompt:\n> \u201cIf this API were implemented in GraphQL instead of REST, what advantages or disadvantages would arise given the dataset and analytics goals? Evaluate complexity and flexibility.\u201d\n\nThis shows:\n- Architectural comparison\n- Conscious design choice\n- Not just defaulting to REST\n\n---\n\n# \ud83d\ude80 5\ufe0f\u20e3 Scalability & Future Evolution\n\nThis is strong academic thinking.\n\n### \ud83d\udd39 Prompt:\n> \u201cIf this API needed to scale to 10x dataset size and thousands of concurrent users, what changes would be required in database indexing, caching, and endpoint design?\u201d\n\nThat shows:\n- Forward thinking\n- Performance awareness\n- Production-level reasoning\n\n---\n\n# \ud83d\udd0d 6\ufe0f\u20e3 Indexing & Query Planning Exploration\n\nVery few students do this.\n\n### \ud83d\udd39 Prompt:\n> \u201cGiven these planned analytics endpoints (list them), suggest an indexing strategy in PostgreSQL and explain the trade-offs.\u201d\n\nThis is clear \u201csolution optimisation exploration\u201d.\n\n---\n\n# \ud83e\uddf1 7\ufe0f\u20e3 Data Integrity & Edge Case Modelling\n\nThis demonstrates engineering depth.\n\n### \ud83d\udd39 Prompt:\n> \u201cIdentify possible edge cases or integrity risks in this schema design (e.g., orphaned records, inconsistent references, missing data). Propose constraints or validation rules to mitigate them.\u201d\n\nThis shows robustness thinking.\n\n---\n\n# \ud83e\udde0 8\ufe0f\u20e3 Creative Feature Expansion\n\nBefore committing, push the concept creatively.\n\n### \ud83d\udd39 Prompt:\n> \u201cBased on this dataset, propose innovative API features that would differentiate this project from a basic CRUD implementation.\u201d\n\nThis helps you find something more distinctive.\n\n---\n\n# \ud83e\uddea 9\ufe0f\u20e3 Test Strategy Exploration\n\nHigh-level engineering.\n\n### \ud83d\udd39 Prompt:\n> \u201cDesign a testing strategy for this API that includes unit tests, integration tests, and validation tests for analytics endpoints.\u201d\n\nShows software engineering maturity.\n\n---\n\n# \ud83e\udded 10\ufe0f\u20e3 \u201cShould I Even Build This?\u201d Challenge Prompt\n\nThis is bold \u2014 and very strong academically.\n\n### \ud83d\udd39 Prompt:\n> \u201cCritically evaluate whether this dataset is rich enough to support meaningful analytics. Identify limitations and suggest ways to augment it if necessary.\u201d\n\nThis demonstrates:\n- Critical thinking\n- Not blindly committing\n- Intellectual honesty\n\n---\n\n# \ud83c\udfc6 What High-Level Use Looks Like in Your Report\n\nInstead of saying:\n> \u201cI used AI to generate endpoints.\u201d\n\nYou say:\n\n> \u201cGenerative AI was used to explore multiple schema designs, evaluate REST versus GraphQL architectures, stress-test scalability assumptions, and propose advanced analytical endpoints. Alternative modelling strategies were compared before selecting the final architecture.\u201d\n\nThat\u2019s exactly what the marking criteria means.\n\n---\n\n# \ud83c\udfaf The Key Principle\n\nHigh-level GenAI use =  \nUsing AI to **explore alternatives, evaluate trade-offs, and refine design decisions**, not just generate implementation code.\n\n---\n\nIf you\u2019d like, paste a short summary of:\n\n- Your chosen dataset\n- Your proposed core idea\n- Your planned CRUD model\n\nAnd I\u2019ll generate a set of **custom high-level exploratory prompts specifically tailored to your project**, rather than generic ones."
+            ]
+          },
+          "create_time": 1772469931.427401,
+          "end_turn": true,
+          "id": "33e61cfa-f422-4ee1-ba96-c8b9fd6d7eae",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "content_references": [],
+            "default_model_slug": "gpt-5-2",
+            "message_type": "next",
+            "model_slug": "gpt-5-2",
+            "parent_id": "9409c96e-1d1b-4812-9250-26c4de865ae1",
+            "request_id": "1dd86d7b-6303-4110-9f50-52ead8988714",
+            "resolved_model_slug": "gpt-5-2",
+            "search_result_groups": [],
+            "token_count": 986,
+            "turn_exchange_id": "7b940557-28f5-46a6-8107-ff0438425f30"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "9409c96e-1d1b-4812-9250-26c4de865ae1"
+      },
+      "4c865165-e21e-43d5-b05b-81ad056c936d": {
+        "children": [
+          "b1063127-b095-456a-bed9-a7a50d4a3e46"
+        ],
+        "id": "4c865165-e21e-43d5-b05b-81ad056c936d",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Great observation \u2014 and this is a *fantastic* opportunity to demonstrate **high-level GenAI use for data quality exploration**, not just API building.\n\nWhat you\u2019re seeing is almost certainly **character encoding issues**, not just \u201cforeign language titles\u201d.\n\nLet\u2019s break this down properly.\n\n---\n\n## \ud83d\udd0e What\u2019s Actually Happening?\n\nExample:\n```\n\"\u00eb\u00b2\u201e\u00ed\u0160\u0153\u00eb\u00b2\u201e \u00ed\u0152\u0152\u00eb\u009d\u00bc\u00eb\u2026\u00b8\u00ec\u009d\u00b4\u00ec\u2022\u201e - Vtuber Paranoia\"\n```\n\nThis is very likely:\n\n- Originally Korean (Hangul)\n- Encoded in UTF-8\n- Incorrectly decoded as ISO-8859-1 (Latin-1)\n\nThis phenomenon is called **mojibake**.\n\nYour second example:\n\n```\nCOGEN: Sword of Rewind / COGEN: \u00e5\u00a4\u00a7\u00e9\u00b3\u00a5\u00e3\u0081\u201c\u00e3\u0081\u00af\u00e3\u0081\u008f\u00e3\u0081\u00a8\u00e5\u02c6\u00bb\u00e3\u0081\u00ae\u00e5\u2030\u00a3\n```\n\nThat part:\n```\n\u00e5\u00a4\u00a7\u00e9\u00b3\u00a5\u00e3\u0081\u201c\u00e3\u0081\u00af\u00e3\u0081\u008f\u00e3\u0081\u00a8\u00e5\u02c6\u00bb\u00e3\u0081\u00ae\u00e5\u2030\u00a3\n```\n\nIs almost certainly Japanese that has been mis-decoded.\n\nThe third example:\n```\n\u00e8\u00ac\u017d\u00e8\u00a7\u00a3\u00e3\u0081\u008d\u00e4\u00ba\u0152\u00e5\u008d\u0081\u00e9\u0192\u00a8\u00e5\u00b1\u2039\n```\n\nAlso mojibake from Japanese.\n\n---\n\n# \ud83c\udfaf Why This Is Excellent for High-Level GenAI Use\n\nThis gives you a **data cleaning and integrity challenge**, which you can:\n\n- Detect\n- Analyse\n- Propose correction strategies\n- Justify design decisions around\n\nThis is much stronger academically than ignoring it.\n\n---\n\n# \ud83e\udde0 High-Level Prompts You Should Use Here\n\nThese prompts show analytical thinking rather than just asking for a fix.\n\n---\n\n## \ud83d\udd39 1\ufe0f\u20e3 Prompt: Diagnose Encoding Problem\n\n> \u201cHere are several corrupted-looking game titles from the Steam dataset (paste examples). Analyse what encoding issue may have occurred. Explain the likely source of corruption and how it could be corrected programmatically during data import.\u201d\n\nThis shows:\n- You\u2019re diagnosing\n- You\u2019re understanding encoding standards\n- You\u2019re thinking about ingestion pipelines\n\n---\n\n## \ud83d\udd39 2\ufe0f\u20e3 Prompt: Cleaning Strategy Exploration\n\n> \u201cWhen importing this Steam CSV into PostgreSQL, how should I handle titles containing mojibake or mixed encodings? Compare these approaches:\n> 1) Attempt automatic UTF-8 repair\n> 2) Store raw text as-is\n> 3) Filter out corrupted titles\n> 4) Detect language and normalise\n> Evaluate trade-offs in terms of data integrity and reproducibility.\u201d\n\nThis is very strong.  \nYou\u2019re exploring *options*, not blindly fixing.\n\n---\n\n## \ud83d\udd39 3\ufe0f\u20e3 Prompt: SQL vs Application-Level Cleaning\n\n> \u201cShould character encoding correction occur:\n> - before database insertion,\n> - during insertion,\n> - or as a post-processing cleanup step?\n> Compare architectural implications for reproducibility and maintainability.\u201d\n\nThat demonstrates architectural reasoning.\n\n---\n\n## \ud83d\udd39 4\ufe0f\u20e3 Prompt: Unicode Storage Design\n\n> \u201cExplain how PostgreSQL handles UTF-8 encoding internally and whether any schema-level configuration is required to ensure multilingual Steam titles are stored correctly.\u201d\n\nThat shows database-level awareness.\n\n---\n\n## \ud83d\udd39 5\ufe0f\u20e3 Prompt: API-Level Design Question\n\n> \u201cIf some game titles contain non-Latin characters, how should the API handle search functionality? Compare:\n> - case-insensitive search\n> - accent folding\n> - transliteration\n> - full-text search\n> in PostgreSQL.\u201d\n\nThis is advanced API thinking.\n\n---\n\n# \ud83c\udfc6 How To Turn This Into Report Gold\n\nInstead of saying:\n\n> \u201cSome titles were corrupted and fixed.\u201d\n\nSay something like:\n\n> \u201cDuring dataset exploration, irregular character encodings were identified in multiple game titles. Generative AI was used to diagnose the issue as likely UTF-8 misinterpretation (mojibake). Alternative data-cleaning strategies were explored, including automatic re-encoding, preservation of raw data, and language-aware normalization. Ultimately, a pre-import UTF-8 validation pipeline was implemented to ensure consistent Unicode storage in PostgreSQL.\u201d\n\nThat sounds like:\n\n- Investigation\n- Exploration\n- Evaluation\n- Decision-making\n\nExactly what \u201chigh-level use of GenAI\u201d looks like.\n\n---\n\n# \u26a0 Important: Don\u2019t Over-Clean\n\nYou should NOT:\n\n- Remove non-English titles\n- Convert everything to ASCII\n- Strip Unicode\n\nSteam is a global platform. Unicode support is correct.\n\nYour database should remain UTF-8.\n\nThe issue is corrupted decoding \u2014 not foreign languages.\n\n---\n\n# \ud83d\udca1 Extra Distinction-Level Idea\n\nYou could even create an analytics endpoint:\n\n```\nGET /analytics/language-distribution\n```\n\nWhere you:\n\n- Detect character ranges\n- Estimate proportion of titles containing non-Latin scripts\n\nThat shows:\n\n- Creative dataset exploration\n- Cultural awareness\n- Unicode understanding\n\nVery impressive.\n\n---\n\n# \ud83c\udfaf What This Demonstrates to Markers\n\nYou are showing:\n\n- Data integrity awareness\n- Understanding of encoding standards\n- Architectural thinking\n- Careful ingestion design\n- Critical evaluation of AI suggestions\n\nThat is absolutely high-level use.\n\n---\n\nIf you'd like, next I can:\n\n- Help you craft a clean \u201cData Quality Exploration\u201d section for your report  \n- Or help you design a safe UTF-8 cleaning import strategy for PostgreSQL  \n\nWhich direction do you want to take?"
+            ]
+          },
+          "create_time": 1772459373.163005,
+          "end_turn": true,
+          "id": "4c865165-e21e-43d5-b05b-81ad056c936d",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "code_blocks": {
+              "0": {
+                "edited": false,
+                "id": "cfaerz"
+              },
+              "1": {
+                "edited": false,
+                "id": "kxwpxu"
+              },
+              "2": {
+                "edited": false,
+                "id": "5aaynb"
+              },
+              "3": {
+                "edited": false,
+                "id": "r2b6ds"
+              },
+              "4": {
+                "edited": false,
+                "id": "5o7mmn"
+              }
+            },
+            "content_references": [],
+            "default_model_slug": "gpt-5-2",
+            "finish_details": {
+              "stop_tokens": [
+                200002
+              ],
+              "type": "stop"
+            },
+            "is_complete": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-2",
+            "parent_id": "70ee9659-1692-4502-a8ca-15713474acde",
+            "request_id": "83127301-16c8-4f04-bdd2-7783e37a9e89",
+            "resolved_model_slug": "gpt-5-2",
+            "search_result_groups": [],
+            "token_count": 1133,
+            "turn_exchange_id": "719e61cc-f6aa-435e-a4ef-e90c55e5461a"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "70ee9659-1692-4502-a8ca-15713474acde"
+      },
+      "68bd4725-3fbf-42db-ae0f-c83f5ac8d7a4": {
+        "children": [
+          "70ee9659-1692-4502-a8ca-15713474acde"
+        ],
+        "id": "68bd4725-3fbf-42db-ae0f-c83f5ac8d7a4",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Excellent \u2014 this is exactly the kind of thing that can push you into the higher grading band.\n\nThe key difference between **basic AI usage** and **\u201chigh-level use of GenAI for creative thinking and solution exploration\u201d** is:\n\n- \u274c Basic: \u201cGenerate CRUD endpoints for FastAPI.\u201d\n- \u2705 High-level: \u201cHelp me explore architectural trade-offs, alternative schemas, indexing strategies, analytics design, and optimisation approaches.\u201d\n\nBelow are **strategic prompt ideas**, structured by development phase, that clearly demonstrate *creative exploration*, not just code generation.\n\n---\n\n# \ud83c\udfae 1\ufe0f\u20e3 Dataset Exploration & Concept Framing\n\nThese prompts show you using AI to **critically explore the dataset before building anything**.\n\n### \ud83d\udd39 Prompt: Dataset Structural Analysis\n> \u201cHere is a sample of the Steam dataset columns and 10 example rows. Analyse the structure and suggest multiple possible API concepts that could be built from this dataset. For each concept, explain the types of analytics it would enable and its suitability for a RESTful API.\u201d\n\nWhy this is high-level:\n- You\u2019re not asking for code.\n- You\u2019re exploring *multiple conceptual directions*.\n- You\u2019re evaluating design suitability.\n\n---\n\n### \ud83d\udd39 Prompt: Identifying Analytical Potential\n> \u201cBased on this Steam dataset schema, identify non-trivial analytical questions that could be answered using SQL aggregation. Prioritise questions that would require grouping, filtering, joins, or time-series logic.\u201d\n\nThis shows:\n- Intentional analytical depth\n- Alignment with SQL justification\n- Exploration of complexity\n\n---\n\n# \ud83c\udfd7 2\ufe0f\u20e3 Schema Design & Normalisation Exploration\n\nThis is where you can score very highly.\n\n### \ud83d\udd39 Prompt: Schema Refinement\n> \u201cGiven this flat CSV structure for Steam games, propose both a denormalised schema and a fully normalised relational schema (3NF). Compare their trade-offs in terms of query performance, maintainability, and extensibility for analytics.\u201d\n\nThis is extremely strong academically.\n\n---\n\n### \ud83d\udd39 Prompt: Many-to-Many Design Challenge\n> \u201cThe dataset includes comma-separated genres and tags. Propose multiple strategies for modelling this in PostgreSQL. Compare storing as JSON arrays vs junction tables vs text arrays. Justify which approach is most appropriate for an analytics-heavy REST API.\u201d\n\nThat shows:\n- Database theory understanding\n- Architectural trade-off reasoning\n- Intentional design decisions\n\n---\n\n# \u26a1 3\ufe0f\u20e3 Performance & Indexing Strategy\n\nMost students won\u2019t go this far \u2014 this is distinction-level behaviour.\n\n### \ud83d\udd39 Prompt: Index Strategy\n> \u201cGiven these proposed analytics endpoints (list them), suggest an indexing strategy for PostgreSQL. Explain which indexes would improve performance and any trade-offs in write performance.\u201d\n\nThat demonstrates:\n- Systems thinking\n- Performance awareness\n- Real-world design reasoning\n\n---\n\n### \ud83d\udd39 Prompt: Query Optimisation\n> \u201cHere is a SQL query for a genre popularity endpoint. Suggest ways to optimise it for large datasets (50k+ rows), including indexing, query rewriting, or materialised views.\u201d\n\nVery strong for marks.\n\n---\n\n# \ud83e\udde0 4\ufe0f\u20e3 Analytics Endpoint Creativity\n\nThis is where you show creative exploration beyond CRUD.\n\n### \ud83d\udd39 Prompt: Advanced Endpoint Ideation\n> \u201cSuggest advanced analytical endpoints for a Steam Insights API that go beyond simple filtering. Focus on endpoints that demonstrate time trends, price-value analysis, or publisher performance metrics.\u201d\n\nThis encourages AI to explore design space.\n\n---\n\n### \ud83d\udd39 Prompt: Edge Case Exploration\n> \u201cFor each proposed analytics endpoint, identify possible edge cases (missing data, zero reviews, extreme prices, etc.) and suggest robust handling strategies.\u201d\n\nThis shows maturity in API thinking.\n\n---\n\n# \ud83d\udd0d 5\ufe0f\u20e3 Recommendation & Similarity Exploration\n\nVery impressive if done well.\n\n### \ud83d\udd39 Prompt:\n> \u201cUsing only relational SQL (no ML libraries), propose ways to implement a \u2018similar games\u2019 recommendation endpoint based on shared genres, tags, and price range. Compare multiple similarity scoring approaches.\u201d\n\nThis demonstrates:\n- Algorithmic thinking\n- Creative use of SQL\n- Problem exploration\n\n---\n\n# \ud83e\uddea 6\ufe0f\u20e3 Validation & Error Handling Strategy\n\nHigh-level engineering thinking.\n\n### \ud83d\udd39 Prompt:\n> \u201cFor a CRUD model like user lists referencing games, identify potential data integrity risks and propose validation rules and HTTP error codes that align with REST best practices.\u201d\n\nThis shows:\n- Understanding of API standards\n- Professional design thinking\n\n---\n\n# \ud83d\udcca 7\ufe0f\u20e3 Demonstrating AI-Assisted Data Import\n\nThis is explicitly encouraged in the brief.\n\n### \ud83d\udd39 Prompt:\n> \u201cGiven this Steam CSV sample, generate a robust data import plan including schema creation, data cleaning steps, type casting, and validation. Identify potential data quality issues.\u201d\n\nThat clearly aligns with:\n> \u201cGenerate import scripts\u2026 accelerate data preparation.\u201d\n\n---\n\n# \ud83e\udded 8\ufe0f\u20e3 Technology Stack Justification\n\nTo show strategic thinking:\n\n### \ud83d\udd39 Prompt:\n> \u201cCompare FastAPI + PostgreSQL vs Django REST Framework + PostgreSQL for this Steam analytics API. Evaluate scalability, development speed, documentation support, and suitability for analytics-heavy endpoints.\u201d\n\nThis is *solution exploration*, not just implementation.\n\n---\n\n# \ud83e\uddf1 9\ufe0f\u20e3 Architectural Alternatives\n\nVery high-level.\n\n### \ud83d\udd39 Prompt:\n> \u201cIf this API were built using GraphQL instead of REST, what advantages or disadvantages would arise for analytical queries and client flexibility?\u201d\n\nEven if you choose REST, this shows exploration.\n\n---\n\n# \ud83d\udcc8 10\ufe0f\u20e3 Scalability & Extension Thinking\n\n### \ud83d\udd39 Prompt:\n> \u201cIf this API needed to scale to millions of games and users, what architectural changes would be required? Consider caching, pagination, rate limiting, and background processing.\u201d\n\nThis shows future-oriented reasoning.\n\n---\n\n# \ud83c\udfc6 How To Use These Prompts Strategically\n\nDon\u2019t just paste AI output into your report.\n\nInstead:\n\n1. Ask exploratory prompt.\n2. Compare AI suggestions.\n3. Choose one approach.\n4. Justify why you chose it.\n5. Mention alternative approaches considered.\n\nThat demonstrates **critical engagement**, not blind usage.\n\n---\n\n# \ud83c\udfaf What \u201cHigh-Level Use\u201d Looks Like to Markers\n\nMarkers want to see:\n\n- You used AI to explore alternatives\n- You evaluated trade-offs\n- You refined ideas\n- You questioned outputs\n- You made architectural decisions\n\nNot:\n\n- \u201cAI wrote my endpoints.\u201d\n\n---\n\nIf you\u2019d like, I can next:\n\n- Help you craft a short \u201cAI usage methodology\u201d section you can include in your report  \n- Or simulate a mini example conversation that would clearly demonstrate high-level usage  \n\nWhich would you prefer?"
+            ]
+          },
+          "create_time": 1772458441.056458,
+          "end_turn": true,
+          "id": "68bd4725-3fbf-42db-ae0f-c83f5ac8d7a4",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "content_references": [],
+            "default_model_slug": "gpt-5-2",
+            "finish_details": {
+              "stop_tokens": [
+                200002
+              ],
+              "type": "stop"
+            },
+            "is_complete": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-2",
+            "parent_id": "e8d3d992-fd5d-42b1-b8ab-d13518d584e4",
+            "request_id": "dcb0253c-b3c6-4cb7-b824-efeefef7fd2a",
+            "resolved_model_slug": "gpt-5-2",
+            "search_result_groups": [],
+            "token_count": 1333,
+            "turn_exchange_id": "1e247344-9384-4bdb-8a9f-9d240781d295"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "e8d3d992-fd5d-42b1-b8ab-d13518d584e4"
+      },
+      "70ee9659-1692-4502-a8ca-15713474acde": {
+        "children": [
+          "4c865165-e21e-43d5-b05b-81ad056c936d"
+        ],
+        "id": "70ee9659-1692-4502-a8ca-15713474acde",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Within the Kaggle \"Steam Games Dataset\" there are many entries with off names which I suspect are from a language other than english (specficially, languages which use different characters to the A-Z alphabet)\n\nhere are some examples: \"\u00eb\u00b2\u201e\u00ed\u0160\u0153\u00eb\u00b2\u201e \u00ed\u0152\u0152\u00eb\u009d\u00bc\u00eb\u2026\u00b8\u00ec\u009d\u00b4\u00ec\u2022\u201e - Vtuber Paranoia\", \"COGEN: Sword of Rewind / COGEN: \u00e5\u00a4\u00a7\u00e9\u00b3\u00a5\u00e3\u0081\u201c\u00e3\u0081\u00af\u00e3\u0081\u008f\u00e3\u0081\u00a8\u00e5\u02c6\u00bb\u00e3\u0081\u00ae\u00e5\u2030\u00a3 \", \"\u00e8\u00ac\u017d\u00e8\u00a7\u00a3\u00e3\u0081\u008d\u00e4\u00ba\u0152\u00e5\u008d\u0081\u00e9\u0192\u00a8\u00e5\u00b1\u2039 \"5"
+            ]
+          },
+          "create_time": 1772459372.831,
+          "end_turn": null,
+          "id": "70ee9659-1692-4502-a8ca-15713474acde",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "83127301-16c8-4f04-bdd2-7783e37a9e89",
+            "resolved_model_slug": "gpt-5-2",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "719e61cc-f6aa-435e-a4ef-e90c55e5461a"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "68bd4725-3fbf-42db-ae0f-c83f5ac8d7a4"
+      },
+      "72e6cd80-0d7f-4ac1-9f05-168824a078dc": {
+        "children": [],
+        "id": "72e6cd80-0d7f-4ac1-9f05-168824a078dc",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Below is a **structured summary of your conversation** framed specifically for a **\u201cHigh-Level Use of Generative AI\u201d documentation section**. I\u2019ve organised it so you can directly adapt parts into a report.\n\nI summarise each **user prompt**, the **GenAI technique used**, and its **benefits and potential drawbacks**.\n\n---\n\n# High-Level Use of Generative AI \u2013 Conversation Summary\n\nThis document summarises how Generative AI was used throughout the ideation and design phase of the API project. The interaction demonstrates how AI was used not only for generating code, but also for **creative exploration, design evaluation, and problem analysis**.\n\nThe prompts below are summarised rather than quoted verbatim for clarity.\n\n---\n\n# 1. Exploring Dataset Suitability for the Project\n\n### Prompt Summary\nAsked whether **video-game datasets (specifically World of Warcraft datasets)** would be appropriate for the project.\n\n### Technique Used\n**AI-assisted domain exploration**\n\nThe AI was used to:\n- Explore possible project themes\n- Evaluate dataset suitability\n- Suggest alternative ideas.\n\n### Advantages\n- Quickly surfaced **multiple possible project directions**.\n- Allowed evaluation of **domain relevance and complexity** before committing.\n- Helped align the project with **personal interest (video games)**, which increases engagement and design quality.\n\n### Potential Drawbacks\n- AI suggestions may reflect **common or generic ideas**.\n- Without verification, AI might suggest datasets that are **poorly licensed or incomplete**.\n\n---\n\n# 2. Expanding Dataset Options Beyond World of Warcraft\n\n### Prompt Summary\nRequested **other video-game datasets** that may be more appropriate than WoW datasets (e.g., Steam datasets).\n\n### Technique Used\n**Dataset discovery using AI**\n\nAI was used to:\n- Search for relevant datasets\n- Compare dataset types\n- Suggest which datasets might support stronger analytics.\n\n### Advantages\n- Rapidly surfaced **multiple dataset candidates**.\n- Allowed evaluation of datasets based on:\n  - structure\n  - size\n  - analytical potential.\n\n### Potential Drawbacks\n- AI may recommend datasets **without fully verifying their quality or completeness**.\n- Requires manual review to confirm suitability.\n\n---\n\n# 3. Clarifying Assignment Requirements (CRUD Expectations)\n\n### Prompt Summary\nAsked whether CRUD operations should be applied to the **dataset itself**, or to **custom application data**.\n\n### Technique Used\n**Specification interpretation and clarification**\n\nAI was used to interpret the assessment brief and explain:\n- expected CRUD implementation\n- architectural best practices.\n\n### Advantages\n- Reduced risk of **misinterpreting assignment requirements**.\n- Provided architectural insight into **real-world API patterns**.\n\n### Potential Drawbacks\n- AI interpretations may still require **confirmation with module documentation or instructors**.\n\n---\n\n# 4. Generating Prompts for Demonstrating \u201cHigh-Level Use of GenAI\u201d\n\n### Prompt Summary\nRequested examples of prompts that demonstrate **high-level use of AI for creative thinking and solution exploration**.\n\n### Technique Used\n**Meta-prompting (using AI to improve AI usage)**\n\nAI was used to:\n- suggest **higher-level exploratory prompts**\n- demonstrate how AI can assist with:\n  - architecture decisions\n  - schema exploration\n  - performance considerations.\n\n### Advantages\n- Encouraged **intentional and structured AI usage**.\n- Shifted AI usage from **simple code generation to design exploration**.\n\n### Potential Drawbacks\n- May introduce **overly complex exploration** that is unnecessary for the project scope.\n\n---\n\n# 5. Investigating Data Quality Issues in the Dataset\n\n### Prompt Summary\nObserved **non-Latin or corrupted characters in game titles** and asked what caused them.\n\nExample titles included characters like:\n\n```\n\u00eb\u00b2\u201e\u00ed\u0160\u0153\u00eb\u00b2\u201e \u00ed\u0152\u0152\u00eb\u009d\u00bc\u00eb\u2026\u00b8\u00ec\u009d\u00b4\u00ec\u2022\u201e\n\u00e5\u00a4\u00a7\u00e9\u00b3\u00a5\u00e3\u0081\u201c\u00e3\u0081\u00af\u00e3\u0081\u008f\u00e3\u0081\u00a8\u00e5\u02c6\u00bb\u00e3\u0081\u00ae\u00e5\u2030\u00a3\n```\n\n### Technique Used\n**AI-assisted data quality analysis**\n\nThe AI was used to:\n- diagnose the issue\n- explain encoding problems (mojibake)\n- suggest possible cleaning strategies.\n\n### Advantages\n- Quickly identified the likely cause: **UTF-8 encoding misinterpretation**.\n- Helped develop a **data ingestion strategy**.\n- Demonstrated **critical dataset exploration**.\n\n### Potential Drawbacks\n- AI explanations should still be **validated through documentation or experimentation**.\n- Automated fixes may accidentally **modify valid Unicode text**.\n\n---\n\n# 6. Exploring Organisational Structures of Game Publishers\n\n### Prompt Summary\nAsked whether publisher sub-brands such as EA Sports or DICE should be classified as **subsidiaries** or something else.\n\n### Technique Used\n**Conceptual modelling exploration**\n\nAI was used to explore:\n- corporate terminology\n- organisational hierarchies\n- implications for database design.\n\n### Advantages\n- Helped refine **data modelling terminology**.\n- Encouraged designing **flexible hierarchical relationships**.\n\n### Potential Drawbacks\n- Real corporate structures can be **complex and inconsistent**, so simplifications may still be required.\n\n---\n\n# 7. Evaluating Design Direction Before Committing\n\n### Prompt Summary\nAsked for suggestions of **additional high-level AI uses before committing to the project idea**.\n\n### Technique Used\n**Design stress-testing using AI**\n\nAI was used to explore:\n- architectural weaknesses\n- alternative schemas\n- scalability considerations\n- additional features.\n\n### Advantages\n- Encouraged **critical reflection before implementation**.\n- Reduced risk of committing to **poor design decisions**.\n- Demonstrated **solution exploration**, not just generation.\n\n### Potential Drawbacks\n- Excessive exploration may **delay implementation**.\n- AI may suggest ideas that **exceed assignment scope**.\n\n---\n\n# Key Techniques Demonstrated in the Conversation\n\nThe conversation demonstrates several high-level GenAI techniques:\n\n| Technique | Description |\n|--------|--------|\n| Domain Exploration | Using AI to explore possible project topics |\n| Dataset Discovery | Identifying suitable datasets |\n| Specification Interpretation | Clarifying assignment requirements |\n| Meta-Prompting | Using AI to improve AI usage strategies |\n| Data Quality Analysis | Investigating dataset inconsistencies |\n| Conceptual Modelling | Exploring domain terminology and structures |\n| Architectural Exploration | Comparing alternative designs |\n| Design Stress Testing | Identifying weaknesses before implementation |\n\n---\n\n# Overall Benefits of Using GenAI in This Process\n\nThe conversation demonstrates that GenAI was used for:\n\n- **Creative ideation**\n- **Problem diagnosis**\n- **Design evaluation**\n- **Concept clarification**\n- **Solution exploration**\n\nThis aligns strongly with the assignment objective:\n\n> \u201cHigh level use of GenAI to aid creative thinking and solution exploration.\u201d\n\n---\n\n# Potential Risks of GenAI Usage\n\nWhile useful, reliance on AI introduces some risks:\n\n- Incorrect or outdated information\n- Overly complex design suggestions\n- Dataset recommendations without full verification\n\nThese risks were mitigated by **critical evaluation of AI outputs** before adopting them.\n\n---\n\nIf you'd like, I can also help you turn this into a **1-page polished \u201cAI Usage Methodology\u201d section** that will look very strong in your submission."
+            ]
+          },
+          "create_time": 1773174286.381372,
+          "end_turn": true,
+          "id": "72e6cd80-0d7f-4ac1-9f05-168824a078dc",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "code_blocks": {
+              "0": {
+                "edited": false,
+                "id": "ajm3tj",
+                "preview_language": null,
+                "previewable": false
+              }
+            },
+            "content_references": [],
+            "default_model_slug": "gpt-5-3",
+            "finish_details": {
+              "stop_tokens": [
+                200002
+              ],
+              "type": "stop"
+            },
+            "is_complete": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-3",
+            "parent_id": "7ff16403-6750-4793-934c-cbcbef3bf992",
+            "request_id": "ad6df5c1-9356-4634-b666-a68c8429b45d",
+            "resolved_model_slug": "gpt-5-3",
+            "search_result_groups": [],
+            "token_count": 1464,
+            "turn_exchange_id": "ad4b8e14-f0ae-49fa-b789-53a46e04a522"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "7ff16403-6750-4793-934c-cbcbef3bf992"
+      },
+      "7ff16403-6750-4793-934c-cbcbef3bf992": {
+        "children": [
+          "72e6cd80-0d7f-4ac1-9f05-168824a078dc"
+        ],
+        "id": "7ff16403-6750-4793-934c-cbcbef3bf992",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "system"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "create_time": 1773174286.4458885,
+          "end_turn": true,
+          "id": "7ff16403-6750-4793-934c-cbcbef3bf992",
+          "metadata": {
+            "can_save": false,
+            "default_model_slug": "gpt-5-3",
+            "is_visually_hidden_from_conversation": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-3",
+            "parent_id": "80a31aad-a8f4-42f0-8f45-1b193d1ebdab",
+            "rebase_developer_message": true,
+            "request_id": "ad6df5c1-9356-4634-b666-a68c8429b45d",
+            "turn_exchange_id": "ad4b8e14-f0ae-49fa-b789-53a46e04a522"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 0.0
+        },
+        "parent": "80a31aad-a8f4-42f0-8f45-1b193d1ebdab"
+      },
+      "80a31aad-a8f4-42f0-8f45-1b193d1ebdab": {
+        "children": [
+          "7ff16403-6750-4793-934c-cbcbef3bf992"
+        ],
+        "id": "80a31aad-a8f4-42f0-8f45-1b193d1ebdab",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "system"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "create_time": 1773174286.3133686,
+          "end_turn": true,
+          "id": "80a31aad-a8f4-42f0-8f45-1b193d1ebdab",
+          "metadata": {
+            "can_save": false,
+            "default_model_slug": "gpt-5-3",
+            "is_visually_hidden_from_conversation": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-3",
+            "parent_id": "e7d52c4a-931b-43dc-b124-bf7249cc42db",
+            "rebase_system_message": true,
+            "request_id": "ad6df5c1-9356-4634-b666-a68c8429b45d",
+            "turn_exchange_id": "ad4b8e14-f0ae-49fa-b789-53a46e04a522"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 0.0
+        },
+        "parent": "e7d52c4a-931b-43dc-b124-bf7249cc42db"
+      },
+      "9409c96e-1d1b-4812-9250-26c4de865ae1": {
+        "children": [
+          "33e61cfa-f422-4ee1-ba96-c8b9fd6d7eae"
+        ],
+        "id": "9409c96e-1d1b-4812-9250-26c4de865ae1",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My design conversation has progressed, and I have identified a suitable dataset to sue which requires little to no cleaning. Here is most of the conversation so far, can you suggest any \"high level uses of GenAI to aid creative thinking and solution exploration\", before I commit to this idea"
+            ]
+          },
+          "create_time": 1772469931.27,
+          "end_turn": null,
+          "id": "9409c96e-1d1b-4812-9250-26c4de865ae1",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "1dd86d7b-6303-4110-9f50-52ead8988714",
+            "resolved_model_slug": "gpt-5-2",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "7b940557-28f5-46a6-8107-ff0438425f30"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "a5dfed11-c87d-48f1-bb22-4db8137c3b3c"
+      },
+      "a5dfed11-c87d-48f1-bb22-4db8137c3b3c": {
+        "children": [
+          "9409c96e-1d1b-4812-9250-26c4de865ae1"
+        ],
+        "id": "a5dfed11-c87d-48f1-bb22-4db8137c3b3c",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Excellent question \u2014 this is exactly the kind of modelling nuance that shows **high-level conceptual thinking** rather than surface implementation.\n\nShort answer:\n\nSometimes they are subsidiaries \u2014 but often they are better described as:\n\n- Subsidiaries  \n- Divisions  \n- Labels  \n- Studios  \n- Publishing arms  \n- Internal brands  \n\nThe correct term depends on legal and organisational structure.\n\nLet\u2019s use a real example.\n\n---\n\n## \ud83c\udfae \ue200entity\ue202[\"company\",\"Electronic Arts\",\"video game publisher\"]\ue201\n\n\ue200image_group\ue202{\"layout\":\"carousel\",\"aspect_ratio\":\"1:1\",\"query\":[\"Electronic Arts logo\",\"EA Sports logo\",\"DICE studio logo\",\"EA Capital logo\"],\"num_per_query\":1}\ue201\n\nEA includes:\n\n- \ue200entity\ue202[\"company\",\"EA Sports\",\"sports game division of EA\"]\ue201  \n- \ue200entity\ue202[\"company\",\"DICE\",\"swedish game developer\"]\ue201  \n- \ue200entity\ue202[\"company\",\"EA Capital\",\"venture arm of EA\"]\ue201  \n\nBut these are not structurally identical.\n\n---\n\n# \ud83c\udfe2 Organisational Terms Explained\n\n### 1\ufe0f\u20e3 Subsidiary (Legal Entity)\n\nA subsidiary is:\n\n- A legally separate company\n- Owned (fully or majority) by a parent company\n- Has its own corporate registration\n\nExample:\nDICE operates as a legally distinct company owned by EA.  \nThat makes it a subsidiary.\n\nUse this when:\n- There is a separate legal corporate entity.\n\n---\n\n### 2\ufe0f\u20e3 Division (Internal Business Unit)\n\nA division:\n\n- Is not a separate legal company\n- Operates within the parent corporation\n- Organised by product type or market segment\n\nEA Sports is typically considered a division or brand label within EA, not a separate company.\n\nUse this when:\n- It\u2019s an internal segment of the company.\n\n---\n\n### 3\ufe0f\u20e3 Studio (Development Unit)\n\nCommon in gaming.\n\nA studio:\n\n- Develops games\n- May or may not be legally independent\n- Often acquired and kept operationally distinct\n\nDICE is often referred to as a studio.\n\nThis is more industry terminology than legal terminology.\n\n---\n\n### 4\ufe0f\u20e3 Publishing Label / Brand\n\nSometimes companies operate publishing labels under a master brand.\n\nExample:\nEA Originals is a publishing label.\n\nThese are branding constructs rather than corporate entities.\n\n---\n\n# \ud83c\udfaf For Your API \u2014 What Term Should You Use?\n\nFor academic clarity and clean database modelling:\n\nUse:\n\nParent Company  \nSubsidiary Studio  \nDivision  \n\nIf you want to be technically precise:\n\nModel something like:\n\nCompany\n- id\n- name\n- parent_company_id (nullable)\n- entity_type (enum: parent, subsidiary, division, studio, label)\n\nThis allows:\n\n- EA \u2192 parent\n- DICE \u2192 subsidiary\n- EA Sports \u2192 division\n- EA Capital \u2192 subsidiary (venture arm)\n\nThat\u2019s a very elegant relational design.\n\n---\n\n# \ud83e\udde0 High-Level GenAI Prompt You Could Use Here\n\nThis is exactly how to show solution exploration:\n\n> \u201cIn modelling video game publisher hierarchies, compare representing company relationships using:\n> 1) A simple \u2018publisher\u2019 text field\n> 2) A parent-child company table with self-referencing foreign keys\n> 3) A many-to-many ownership table\n> Evaluate scalability and realism.\u201d\n\nThat shows architectural exploration.\n\n---\n\n# \ud83c\udfd7 Recommendation for Your Steam API\n\nIf you want clean but realistic modelling:\n\nTable: companies  \n- id  \n- name  \n- parent_company_id (self FK)  \n- entity_type (publisher, studio, label, etc.)\n\nTable: games  \n- publisher_id (FK)  \n- developer_id (FK)\n\nThis gives you:\n\n- Corporate hierarchy\n- Join-based analytics\n- Publisher-level aggregation\n- \u201cTop parent company by total game releases\u201d endpoint\n\nThat\u2019s distinction-level modelling.\n\n---\n\n# \ud83d\udccc Final Answer\n\nAre they subsidiaries?\n\nSometimes yes.  \nSometimes divisions.  \nSometimes internal brands.  \nSometimes studios.\n\nBest academic umbrella term?\n\nCorporate entity with hierarchical relationship.\n\nIf you want to be precise and flexible:\n\nUse:\nParent company / subsidiary / division / studio\n\nNot just \u201csubsidiary\u201d.\n\n---\n\nIf you'd like, I can next:\n\n- Design a clean hierarchical company schema for your Steam API  \n- Or show how this enables powerful analytics endpoints  \n\nWhich direction do you want to explore?"
+            ]
+          },
+          "create_time": 1772468548.754145,
+          "end_turn": true,
+          "id": "a5dfed11-c87d-48f1-bb22-4db8137c3b3c",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "content_references": [
+              {
+                "alt": "Electronic Arts",
+                "category": "company",
+                "end_idx": 497,
+                "entity_data": null,
+                "extra_params": {
+                  "disambiguation": "video game publisher"
+                },
+                "matched_text": "\ue200entity\ue202[\"company\",\"Electronic Arts\",\"video game publisher\"]\ue201",
+                "metadata": null,
+                "name": "Electronic Arts",
+                "notes": null,
+                "priority": 1,
+                "prompt_text": "Electronic Arts",
+                "refs": [],
+                "safe_urls": [],
+                "start_idx": 436,
+                "status": "done",
+                "type": "entity"
+              },
+              {
+                "alt": "![Image](https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1)\n\n![Image](https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png)\n\n![Image](https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/)",
+                "aspect_ratio": "1:1",
+                "end_idx": 660,
+                "images": [
+                  {
+                    "image_ref_id": null,
+                    "image_result": {
+                      "content_size": {
+                        "height": 1200,
+                        "width": 1200
+                      },
+                      "content_url": "https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1",
+                      "preview_url": "https://images.openai.com/static-rsc-3/63ObyJ8sshEW_3rzBNW5HgnOMpv8u2xLzQGc45THDxmQGU-RgNNlH2KIJsfC_PP0jL3rKs0QSophXYO8JQOg4AktPbx5ovID198Yb4VEzCM?purpose=preview",
+                      "scores": null,
+                      "show_url": false,
+                      "thumbnail_crop_info": null,
+                      "thumbnail_size": {
+                        "height": 256,
+                        "width": 385
+                      },
+                      "thumbnail_url": "https://images.openai.com/static-rsc-3/OXCeRCTUGYmVZkfBbVJagH0CF30Vs7rHLadKMUZ8ncTrnzpGvkgPmjKGJELy4hNQo3S1VBL6r2CM5QUHgfwD3QtmACDwu5uMGus4z4szBC8?purpose=inline",
+                      "title": "EA Debuts New Games And Products During E3 Game Conference",
+                      "url": "https://media.gettyimages.com/id/694643008/photo/ea-debuts-new-games-and-products-during-e3-game-conference.jpg?b=1&c=UW14FJCckiNL9ON_6svFQBlR7z1pPoYmbQwSAuZbetY%3D&k=20&s=612x612&w=0&utm_source=chatgpt.com"
+                    },
+                    "image_search_query": "Electronic Arts logo",
+                    "image_search_system": null
+                  },
+                  {
+                    "image_ref_id": null,
+                    "image_result": {
+                      "content_size": {
+                        "height": 2000,
+                        "width": 3000
+                      },
+                      "content_url": "https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png",
+                      "preview_url": null,
+                      "scores": null,
+                      "show_url": true,
+                      "thumbnail_crop_info": {
+                        "center_x_percent": 0.24,
+                        "center_y_percent": 0.453551912568306
+                      },
+                      "thumbnail_size": {
+                        "height": 183,
+                        "width": 275
+                      },
+                      "thumbnail_url": "https://images.openai.com/static-rsc-1/F9yrqic3RMDxyueiBRaH9AJyOMvj4i2Z_5xcCGgraDc2LIpPyR2oybMVGPo2lwlOuaZcPYaZORcknNOvpw5QhWTcoFqoJdULhnnarybEBXVRuvOs8Mrb78YBDwEtyrkNHpA2HqK-jJM5ub_eXPMFDA",
+                      "title": "Download EA DICE Logo in SVG Vector or PNG File Format - Logo.wine",
+                      "url": "https://www.logo.wine/logo/DICE_%28company%29?utm_source=chatgpt.com"
+                    },
+                    "image_search_query": "DICE studio logo",
+                    "image_search_system": null
+                  },
+                  {
+                    "image_ref_id": null,
+                    "image_result": {
+                      "content_size": {
+                        "height": 246,
+                        "width": 1000
+                      },
+                      "content_url": "https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/",
+                      "preview_url": null,
+                      "scores": null,
+                      "show_url": true,
+                      "thumbnail_crop_info": {
+                        "center_x_percent": 0.7858719646799117,
+                        "center_y_percent": 0.4774774774774775
+                      },
+                      "thumbnail_size": {
+                        "height": 111,
+                        "width": 453
+                      },
+                      "thumbnail_url": "https://images.openai.com/static-rsc-1/Ev-f49vKALyoEag9ZsMD14VyyDgQBkYgOXZgcrmRBt17mJn6AqkpTL0ii9CaiWmp9vetF8RlOe5VEkIncZcSZJoNksI3Nph2ugIwasTg1I2fLxcik6dq-qrDLL_qeZb0xTg9Mtjrbz87GBxw4-1row",
+                      "title": "DICE Studios",
+                      "url": "https://www.dice.se/?utm_source=chatgpt.com"
+                    },
+                    "image_search_query": "DICE studio logo",
+                    "image_search_system": null
+                  }
+                ],
+                "invalid": false,
+                "layout": "carousel",
+                "matched_learning_block_types": null,
+                "matched_text": "\ue200image_group\ue202{\"layout\":\"carousel\",\"aspect_ratio\":\"1:1\",\"query\":[\"Electronic Arts logo\",\"EA Sports logo\",\"DICE studio logo\",\"EA Capital logo\"],\"num_per_query\":1}\ue201",
+                "prompt_text": "![Image](https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1)\n\n![Image](https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png)\n\n![Image](https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/)",
+                "refs": [],
+                "safe_urls": [
+                  "https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png",
+                  "https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1",
+                  "https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/"
+                ],
+                "start_idx": 499,
+                "type": "image_group"
+              },
+              {
+                "alt": "EA Sports",
+                "category": "company",
+                "end_idx": 739,
+                "entity_data": null,
+                "extra_params": {
+                  "disambiguation": "sports game division of EA"
+                },
+                "matched_text": "\ue200entity\ue202[\"company\",\"EA Sports\",\"sports game division of EA\"]\ue201",
+                "metadata": null,
+                "name": "EA Sports",
+                "notes": null,
+                "priority": 1,
+                "prompt_text": "EA Sports",
+                "refs": [],
+                "safe_urls": [],
+                "start_idx": 678,
+                "status": "done",
+                "type": "entity"
+              },
+              {
+                "alt": "DICE",
+                "category": "company",
+                "end_idx": 796,
+                "entity_data": null,
+                "extra_params": {
+                  "disambiguation": "swedish game developer"
+                },
+                "matched_text": "\ue200entity\ue202[\"company\",\"DICE\",\"swedish game developer\"]\ue201",
+                "metadata": null,
+                "name": "DICE",
+                "notes": null,
+                "priority": 1,
+                "prompt_text": "DICE",
+                "refs": [],
+                "safe_urls": [],
+                "start_idx": 744,
+                "status": "done",
+                "type": "entity"
+              },
+              {
+                "alt": "EA Capital",
+                "category": "company",
+                "end_idx": 854,
+                "entity_data": null,
+                "extra_params": {
+                  "disambiguation": "venture arm of EA"
+                },
+                "matched_text": "\ue200entity\ue202[\"company\",\"EA Capital\",\"venture arm of EA\"]\ue201",
+                "metadata": null,
+                "name": "EA Capital",
+                "notes": null,
+                "priority": 1,
+                "prompt_text": "EA Capital",
+                "refs": [],
+                "safe_urls": [],
+                "start_idx": 801,
+                "status": "done",
+                "type": "entity"
+              }
+            ],
+            "default_model_slug": "gpt-5-2",
+            "finish_details": {
+              "stop_tokens": [
+                200002
+              ],
+              "type": "stop"
+            },
+            "is_complete": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-2",
+            "parent_id": "b1063127-b095-456a-bed9-a7a50d4a3e46",
+            "request_id": "2d7c8913-f397-4d31-aecd-fa1fdc570d8c",
+            "resolved_model_slug": "gpt-5-2",
+            "safe_urls": [
+              "https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png",
+              "https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1",
+              "https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/"
+            ],
+            "search_result_groups": [],
+            "token_count": 906,
+            "turn_exchange_id": "b99c0976-7d18-449d-8ae4-eaadce956f91"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "b1063127-b095-456a-bed9-a7a50d4a3e46"
+      },
+      "b1063127-b095-456a-bed9-a7a50d4a3e46": {
+        "children": [
+          "a5dfed11-c87d-48f1-bb22-4db8137c3b3c"
+        ],
+        "id": "b1063127-b095-456a-bed9-a7a50d4a3e46",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Many video game publishers have multiple wings.\nE.g. Electronic Arts owns EA Sports, EA Captial, DICE, etc\n\nCan these be classed as subsidiaries? or is there a better term to use"
+            ]
+          },
+          "create_time": 1772468548.587,
+          "end_turn": null,
+          "id": "b1063127-b095-456a-bed9-a7a50d4a3e46",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "2d7c8913-f397-4d31-aecd-fa1fdc570d8c",
+            "resolved_model_slug": "gpt-5-2",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "b99c0976-7d18-449d-8ae4-eaadce956f91"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "4c865165-e21e-43d5-b05b-81ad056c936d"
+      },
+      "b6ec217a-e9ca-4cf0-9238-4e1eaf43b43c": {
+        "children": [
+          "e8d3d992-fd5d-42b1-b8ab-d13518d584e4"
+        ],
+        "id": "b6ec217a-e9ca-4cf0-9238-4e1eaf43b43c",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "assistant"
+          },
+          "channel": "final",
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "This is a really good clarification question \u2014 and it\u2019s exactly the kind of thing that separates a safe pass from a high mark.\n\n## \u2705 What the rubric actually requires\n\n> \u201cImplement at least one data model involving all four elements of CRUD (Create, Read, Update and Delete) functionality linked to a database.\u201d\n\nThis means:\n\n- You must have **at least one resource**\n- That resource must be stored in your SQL database\n- You must demonstrate:\n  - **Create**\n  - **Read**\n  - **Update**\n  - **Delete**\n- Via proper HTTP endpoints\n- Returning correct JSON + status codes\n\nIt **does NOT** mean:\n\n- You must allow editing of the Kaggle dataset  \n- You must CRUD Steam games themselves  \n- You must modify external/public data  \n\n---\n\n## \ud83c\udfae In Your Steam Dataset Project\n\nYou will likely have two categories of data:\n\n### 1\ufe0f\u20e3 Imported Public Dataset (Read-Only Reference Data)\n\nFor example:\n\n- `games`\n- `genres`\n- `tags`\n- `publishers`\n\nThis comes from Kaggle and is imported into PostgreSQL.\n\nAcademically, this should be treated as:\n\n> Authoritative reference data\n\nYou can:\n- Query it\n- Filter it\n- Aggregate it\n- Join it\n- Analyse it\n\nBut you **should not allow arbitrary editing of it**.\n\nThis mirrors real-world systems:\n\n- Spotify doesn\u2019t let users CRUD songs\n- Steam doesn\u2019t let users CRUD games\n- IMDb doesn\u2019t let users edit movies directly\n\nThey CRUD **user-generated data**, not core catalog data.\n\nThat\u2019s good architecture.\n\n---\n\n## 2\ufe0f\u20e3 Your Own CRUD Model (This Satisfies the Rubric)\n\nYou must create at least one entity that *your system owns*.\n\nFor example:\n\n### Option A \u2014 User Lists (Recommended)\n\nTables:\n- `lists`\n- `list_items`\n\nEndpoints:\n\n| Operation | Example Endpoint |\n|-----------|------------------|\n| CREATE | `POST /lists` |\n| READ | `GET /lists/{id}` |\n| UPDATE | `PATCH /lists/{id}` |\n| DELETE | `DELETE /lists/{id}` |\n\nYou can also:\n- `POST /lists/{id}/items`\n- `DELETE /lists/{id}/items/{game_id}`\n\nThis gives you:\n- Foreign keys\n- Validation (404 if game doesn\u2019t exist)\n- Relationship handling\n- Clean REST design\n\n---\n\n### Option B \u2014 User Ratings\n\nTable:\n- `user_ratings`\n\n| Operation | Endpoint |\n|-----------|----------|\n| CREATE | `POST /ratings` |\n| READ | `GET /ratings/{id}` |\n| UPDATE | `PUT /ratings/{id}` |\n| DELETE | `DELETE /ratings/{id}` |\n\nAlso valid.\n\n---\n\n## \ud83d\udea8 What NOT To Do\n\nAvoid:\n\n- Allowing deletion of Steam games\n- Allowing modification of core Kaggle dataset rows\n- Mixing reference data with user-modifiable data\n\nThat complicates your justification and makes your architecture weaker.\n\n---\n\n## \ud83c\udf93 What Examiners Actually Want To See\n\nThey\u2019re checking that you:\n\n- Understand REST conventions\n- Use correct status codes:\n  - `201 Created`\n  - `200 OK`\n  - `204 No Content`\n  - `400 Bad Request`\n  - `404 Not Found`\n- Validate input properly\n- Store and retrieve from SQL\n- Demonstrate full lifecycle of a resource\n\nThey are **not** expecting you to \u201cedit Steam.\u201d\n\n---\n\n## \ud83c\udfc6 How To Explain This In Your Report (Very Strong Move)\n\nYou can write something like:\n\n> \u201cThe imported Steam dataset is treated as authoritative reference data and is read-only within the system. CRUD functionality is implemented for user-generated resources (e.g., lists and ratings), ensuring compliance with the assignment requirement while preserving data integrity and reflecting real-world API design patterns.\u201d\n\nThat demonstrates architectural thinking.\n\n---\n\n## \ud83c\udfaf Clean Architecture for Your Steam API\n\n**Reference Data (read-only):**\n- `games`\n- `genres`\n- `tags`\n\n**Your CRUD Model:**\n- `user_lists`\n- `list_items`\n\nThat satisfies:\n- Minimum rubric requirement\n- Clean relational design\n- Realistic API structure\n- Easy demonstration\n- Room for high-level analytics\n\n---\n\nIf you\u2019d like, next I can:\n\n- Design the exact database schema (tables + primary keys + foreign keys)\n- Define the minimum endpoints required to pass\n- Then extend that into distinction-level analytics endpoints  \n- And show where \u201chigh-level GenAI usage\u201d fits into the workflow\n\nLet\u2019s formalise this properly."
+            ]
+          },
+          "create_time": 1772458292.19154,
+          "end_turn": true,
+          "id": "b6ec217a-e9ca-4cf0-9238-4e1eaf43b43c",
+          "metadata": {
+            "can_save": true,
+            "citations": [],
+            "content_references": [],
+            "default_model_slug": "gpt-5-2",
+            "finish_details": {
+              "stop_tokens": [
+                200002
+              ],
+              "type": "stop"
+            },
+            "is_complete": true,
+            "message_type": "next",
+            "model_slug": "gpt-5-2",
+            "parent_id": "e58194cd-4f37-45f8-9f6e-4e2780e673c1",
+            "request_id": "ffdfdbe8-ff01-43e5-b010-8cef919e57b7",
+            "resolved_model_slug": "gpt-5-2",
+            "search_result_groups": [],
+            "token_count": 940,
+            "turn_exchange_id": "7b64751a-a020-4fe3-84c2-c81fd56ca113"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "e58194cd-4f37-45f8-9f6e-4e2780e673c1"
+      },
+      "client-created-root": {
+        "children": [
+          "edfd2257-1e9f-4fe9-8983-33b94221ade9"
+        ],
+        "id": "client-created-root",
+        "message": null,
+        "parent": null
+      },
+      "e58194cd-4f37-45f8-9f6e-4e2780e673c1": {
+        "children": [
+          "b6ec217a-e9ca-4cf0-9238-4e1eaf43b43c"
+        ],
+        "id": "e58194cd-4f37-45f8-9f6e-4e2780e673c1",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Here is a current conversation I am having win a different window. Can you please help me to craft some prompts to display \"High level use of GenAI to aid creative thinking and solution exploration\".\n\nHere is the conversation so far:\n\nFor my web services module at university, we must create an API and have been given full permission to utilise GenAI, and can achieve high grades for \"High level use of GenAI to aid creative thinking and solution exploration\".\n\nHere is the brief: \nAssessment tasks\r\n(a) Minimum Technical Requirements\r\nTo achieve a Pass (i.e. 40+), your API must at a minimum:\r\n\u2022 implement at least one data model involving all four elements of\r\nCRUD (Create, Read, Update and Delete) functionality linked\r\nto a database.2 You can base your design on a RESTful (Rep-\r\nresentational State Transfer) API. However, you can also use a\r\nGraphQL-based API if you think this is more suitable for the\r\nproblem, but you must explain the rationale for using GraphQL.\r\n\u2022 includes at least four API endpoints accessible via HTTP requests\r\n\u2022 handle user inputs and return appropriate JSON responses. You\r\nare permitted to use other formats, provided you justify these in\r\nyour supporting report document.\r\n\u2022 use correct status/error codes, according to industry convention\r\n\u2022 be demonstrable via local execution, web hosting (e.g. Pytho-\r\nnAnywhere), or a Model Context Protocol (MCP) server.\r\nYou can base your implementation on Django, but you can also use\r\nother suitable stacks (e.g. Python FastAPI, Node.js Express, Go\r\nFiber). You must justify your technical choices and motivations.\r\n(b) Example Project Ideas\r\n\u2022 A book metadata and recommendation API integrating a public\r\ndataset (e.g. Goodreads or Google Books) and providing analytic\r\nendpoints such as genre trends, rating distributions, and person-\r\nalised suggestions.\r\n\u2022 An environmental and urban climate statistics API that stores his-\r\ntorical weather, air quality, and temperature data, enabling users\r\nto query aggregated metrics, anomalies, and city-level trends.\r\n\u2022 A productivity and habit analytics API that tracks tasks, habits,\r\ntime logs, and completion patterns, offering endpoints for streak\r\ncalculations, productivity heatmaps, and behavioural summaries.\r\n2You are permitted to use any type of SQL database, but you should not use NoSQL\r\ndatabases except with clear reasoning in your supporting report document.\r\n7\r\n\u2022 A public transport reliability and delay analytics API using open\r\nUK transport datasets, providing CRUD for user-reported inci-\r\ndents and endpoints for route-level reliability scores, delay pat-\r\nterns, and temporal performance summaries.\r\n\u2022 A nutrition and recipe analytics API backed by open food datasets\r\n(e.g. USDA or UK FSA), supporting ingredient/recipe CRUD and\r\ncomputing calories, macronutrients, allergen warnings, and cost or\r\ndifficulty estimates.\r\n\u2022 A housing market and rental insights API integrating ONS or\r\nLand Registry data, offering CRUD for listings and locations, plus\r\nanalytics such as median rent, affordability indices, or regional\r\nprice trends.\r\n\u2022 A cultural events and tourism insights API using public datasets\r\non museums, festivals, and heritage sites, enabling CRUD for\r\nevents and providing popularity metrics, seasonal trends, and\r\nlocation-based recommendations.\r\n\u2022 A sports performance and match statistics API backed by public\r\nsports datasets (e.g. football, cricket, or F1), supporting CRUD\r\nfor teams, players, and matches, alongside analytical endpoints\r\nfor leaderboards, performance summaries, and win probabilities.\r\n(c) Data Sources\r\nYou are encouraged to use publicly available datasets for your project.\r\nBelow are some suggested platforms where you can access suitable data:\r\n\u2022 Kaggle (https://www.kaggle.com/datasets) \u2013 Large collection\r\nof datasets across various domains, including books, weather, health,\r\nand more.\r\n\u2022 data.gov.uk (https://www.data.gov.uk/) \u2013 UK government open\r\ndata portal with datasets on transport, health, education, and\r\npublic services.\r\n\u2022 OpenWeatherMap (https://openweathermap.org/api) \u2013 Weather\r\ndata API that can be used to collect historical and current weather\r\ninformation.\r\n\u2022 Google Dataset Search (https://datasetsearch.research.\r\ngoogle.com/) \u2013 Search engine for publicly available datasets.\r\n8\r\n\u2022 UCI Machine Learning Repository (https://archive.ics.\r\nuci.edu/) \u2013 Datasets commonly used for machine learning and\r\ndata analysis projects.\r\n\u2022 NHS Digital (https://digital.nhs.uk/data) \u2013 Health and\r\ncare data from the UK National Health Service.\r\nEnsure that any dataset you use is appropriately licensed for academic\r\nuse, and clearly cite the source in your technical report.\r\n(d) Using AI to Work with Datasets\r\nYou are encouraged to leverage Generative AI tools to help you dis-\r\ncover, process, and import datasets into your database. A recom-\r\nmended workflow includes:\r\n(i) Dataset Discovery: Use AI to search online for datasets in\r\nareas you are passionate about or interested in exploring. Ask AI to\r\nsuggest relevant datasets, data sources, or domain-specific repositories.\r\n(ii) Download and Explore: Download an interesting dataset\r\nand examine its structure, format, and contents to understand what\r\ndata is available.\r\n(iii) Generate Import Scripts: Provide a subset of your dataset\r\nto AI and ask it to help you create a script to import and store the\r\ndata in your SQL database. This can significantly accelerate the data\r\npreparation process.\r\nThis approach encourages creative exploration while demonstrating ef-\r\nfective use of AI as a productivity tool. Remember to declare your use\r\nof AI tools in your technical report, as outlined in Section 2.\n\nBefore we start designing, I need to decide on the specifics such as the dataset to be used and technology stack. The technology stack is likely to be determined by the main function of the API and the utilised dataset. So let's start there.\nThought for 17s\n\nCool \u2014 the fastest way to nail \u201chigh level use of GenAI for creative thinking + solution exploration\u201d is to pick a domain where you can (1) ingest a real public dataset into SQL, (2) add a small amount of your own CRUD data, and (3) build a few genuinely interesting analytics endpoints on top.\n\nBelow are 4 strong directions (each with a dataset + a stack that fits), then a recommendation for the \u201cmost mark-friendly\u201d option.\n\nOption A \u2014 UK Housing & Rental Insights API (very mark-friendly)\nWhy it scores well\n\nHuge, real dataset \u2192 clear evidence of AI-assisted ingestion + cleaning + schema design.\n\nAnalytics are naturally interesting: trends, affordability indices, area comparisons, anomaly detection.\n\nEasy to justify SQL (relational joins across sales, regions, time periods).\n\nPublic datasets (UK, well-citable)\n\nHM Land Registry Price Paid Data (property sale prices; open licence).\n\nONS rent series / private rent & house prices bulletin (rent indices + commentary; useful for \u201crental pressure\u201d endpoints).\n\nOptional extra: ONS \u201cprivate rental market summary stats\u201d tables (where available).\n\nYour CRUD model (your own data)\n\nListing (user-submitted property listing), or WatchlistArea, or UserSavedSearch, or ValuationNote.\n\nThat gives clean CRUD without trying to \u201cCRUD the national dataset.\u201d\n\nAnalytics endpoints ideas\n\n/analytics/median-price?area=&from=&to=\n\n/analytics/price-trend?area=&period=monthly\n\n/analytics/affordability?area=&income= (income can be a user input; document assumptions)\n\n/analytics/anomalies?area= (flag unusually high/low sales vs rolling median)\n\nStack suggestion\n\nFastAPI + PostgreSQL + SQLAlchemy + Alembic\n\nFastAPI is great for clean OpenAPI docs + rapid endpoint iteration.\n\nPostgres handles bigger imports and analytics better than SQLite once your dataset grows.\n\nOption B \u2014 UK Public Transport Reliability & Incidents API (great if you like \u201csystems\u201d feel)\nDatasets\n\nOffice of Rail and Road (ORR) Public Performance Measure (PPM) \u2013 train punctuality/reliability dataset.\n\nUK Bus statistics: reliability & punctuality tables (BUS09).\n\nOptional local authority KPIs (example: York transport KPIs).\n\nYour CRUD model\n\nIncidentReport (user-submitted delays/incidents), Route, StationStop, etc.\n\nAnalytics endpoints ideas\n\n/analytics/reliability-score?mode=rail&operator=\n\n/analytics/delay-patterns?dayOfWeek=&hour=\n\n/analytics/hotspots?boundingBox= (if you include geo fields)\n\nStack suggestion\n\nNode.js (Express/NestJS) + PostgreSQL\n\nNice if you want to show strong web-service engineering patterns, middleware, validation, etc.\n\nOption C \u2014 NHS Prescribing / Health Service Insight API (powerful but be careful with scope)\nDataset direction\n\nNHS open data is widely available under OGL for publicly accessible data, but you should still cite the relevant licensing/terms page you used.\n\nYour CRUD model\n\nPatientFriendlyExplainerRequest (user requests explanations of statistics), SavedIndicator, etc.\n\nAnalytics endpoints\n\nRegional comparisons, time trends, outliers.\n\nStack suggestion\n\nDjango REST Framework + Postgres\n\nDjango is very \u201creport friendly\u201d because it\u2019s batteries-included and familiar in academia.\n\nOption D \u2014 Books / Recommendations API (fun, but depends on dataset licensing/size)\n\nThis can be excellent, but many popular book datasets have licensing/redistribution constraints. If you go this way, you\u2019ll want to pick a dataset with crystal-clear academic reuse terms and keep the import size manageable.\n\nStack: FastAPI/Express + Postgres is fine.\n\nMy recommendation (if you want the smoothest path to high marks)\n\nPick Option A: UK Housing & Rental Insights API using:\n\nLand Registry Price Paid Data as your \u201cbig public dataset\u201d\n\nONS rent index / rent & house prices bulletin as your \u201csecond public source\u201d for richer analytics\n\nFastAPI + Postgres for a clean, modern API that\u2019s easy to demo + document.\n\nIt\u2019s the easiest to:\n\njustify SQL,\n\nbuild genuinely interesting analytics beyond CRUD,\n\nclearly demonstrate GenAI use (schema exploration, import script generation, feature ideation, test generation, query optimisation prompts, etc.).\n\nHow to \u201cshow\u201d high-level GenAI use (without doing anything sketchy)\n\nYou can explicitly document things like:\n\nAI-assisted dataset exploration (derive schema, data dictionary, constraints)\n\nAI-generated import pipeline + data cleaning rules (with your review + edits)\n\nAI-assisted analytics design (which metrics matter, edge cases, validation)\n\nAI-generated OpenAPI examples, tests, and seed data\n\nAI-assisted SQL query optimisation (explain plans, indexes to add)\n\nIf you pick one option now (A/B/C/D), I\u2019ll immediately:\n\ndefine a tight MVP scope (models + endpoints) that meets the rubric,\n\npropose a database schema,\n\nlist endpoints (CRUD + analytics),\n\nrecommend the exact tech stack + justification text you can paste into the report.\n\nThese are interesting ideas, but none of them are related to an area that I am interested in or passionate about. How about something that uses video game data? I love World of Warcraft, and Kaggle appears to have many World of Warcraft-based datasets. Are of them appropriate for this project?\n\nThat\u2019s actually a fantastic direction \u2014 and much more likely to produce a standout project because passion usually leads to better design decisions.\n\nA World of Warcraft data API is absolutely appropriate for this module \u2014 especially if you:\n\nUse a structured Kaggle dataset (CSV \u2192 SQL import)\n\nImplement meaningful analytics (not just CRUD)\n\nAdd your own user-generated layer (e.g. builds, guilds, performance logs, recommendations)\n\nThis can easily hit distinction-level quality if scoped well.\n\nFirst: Are WoW Kaggle Datasets Appropriate?\n\nYes \u2014 with conditions:\n\nYou must:\n\nEnsure dataset license allows academic use\n\nImport into SQL (not just read a CSV in memory)\n\nAvoid copyrighted media (e.g., images) unless licensed\n\nCite Kaggle dataset author in report\n\nMost WoW Kaggle datasets are:\n\nStructured (CSV \u2192 perfect for SQL)\n\nStatic (good for analytics)\n\nPlayer/raid/class/stat based\n\nThat\u2019s ideal for your assignment.\n\nHigh-Potential WoW API Concepts\n\nBelow are 3 strong directions \u2014 ordered from \u201cmost structured and academic\u201d to \u201cmost creative\u201d.\n\n1\ufe0f\u20e3 WoW Raid & Performance Analytics API (Very Strong Academically)\nDataset Type to Look For on Kaggle:\n\nRaid logs\n\nBoss encounters\n\nDPS / HPS logs\n\nPlayer class performance\n\nExpansion statistics\n\nThese datasets usually contain:\n\nPlayer class\n\nSpec\n\nDamage/healing numbers\n\nBoss name\n\nRaid difficulty\n\nTimestamp\n\nPatch/expansion\n\nWhat Your API Could Do\n\nCRUD (your own model)\n\nGuild\n\nPlayerProfile\n\nRaidTeam\n\nSavedBuild\n\nStrategyNote\n\nAnalytics Endpoints\n\n/analytics/top-dps?boss=&difficulty=\n\n/analytics/class-performance?patch=\n\n/analytics/win-rate?boss=\n\n/analytics/meta-shifts?expansion=\n\n/analytics/spec-tier-list\n\nThat becomes:\n\n\u201cA WoW Raid Performance & Meta Analytics API\u201d\n\nVery justifiable academically:\n\nAggregations\n\nGrouping\n\nTrend analysis\n\nSQL joins\n\nTime-series logic\n\nPossibly patch-based comparisons\n\nThis is very strong for grading.\n\n2\ufe0f\u20e3 WoW Item & Build Optimisation API (Great for creative AI justification)\nDataset Type:\n\nItem stats dataset\n\nWeapon/armor attributes\n\nEnchantments\n\nClass stat weights\n\nYour API Idea:\n\nCRUD:\n\nCharacterBuild\n\nEquippedItem\n\nTalentLoadout\n\nUserStatWeights\n\nAnalytics:\n\n/analytics/best-items?class=&spec=\n\n/analytics/stat-efficiency\n\n/analytics/gear-score\n\n/analytics/upgrade-suggestions\n\nThis shows:\n\nCalculated fields\n\nWeighted scoring algorithms\n\nOptimisation logic\n\nClear use of SQL aggregations\n\nYou can even justify:\n\n\u201cSQL chosen due to relational mapping between items, characters, stat weights, and loadouts.\u201d\n\nVery strong.\n\n3\ufe0f\u20e3 WoW Economy & Auction House API (Extremely Interesting)\nDataset Type:\n\nAuction house listings\n\nItem prices\n\nHistorical price changes\n\nServer economy stats\n\nAPI Concept:\n\nCRUD:\n\nTrackedItem\n\nUserPriceAlert\n\nMarketPredictionNote\n\nAnalytics:\n\n/analytics/price-trends?item=\n\n/analytics/volatility?server=\n\n/analytics/profit-margin\n\n/analytics/arbitrage-opportunities\n\nThis becomes:\n\n\u201cWoW Virtual Economy Analytics API\u201d\n\nVery impressive academically because:\n\nTime-series aggregation\n\nMoving averages\n\nVolatility calculation\n\nAnomaly detection\n\nPossibly forecasting justification\n\nThis could genuinely score very high.\n\nWhich Direction Is Strongest?\n\nIf you want:\n\nMaximum academic credibility \u2192 Raid & Performance API\n\nMost creative thinking marks \u2192 Economy API\n\nMost algorithmic complexity \u2192 Build Optimisation API\n\nRecommended Stack for WoW Project\n\nI strongly recommend:\n\n\ud83d\udd39 FastAPI + PostgreSQL\n\nWhy?\n\nFastAPI auto-generates OpenAPI docs (great for demo)\n\nClean JSON handling\n\nEasy async handling\n\nStrong validation with Pydantic\n\nPostgreSQL handles complex aggregation better than SQLite\n\nEasy to deploy (Render, Railway, PythonAnywhere)\n\nIn your report you can justify:\n\n\u201cFastAPI was selected for its strong support for RESTful APIs, automatic documentation generation, and efficient JSON serialization. PostgreSQL was chosen due to its robustness in handling complex relational queries and aggregation-heavy analytics required by the dataset.\u201d\n\nThat sounds excellent in an academic report.\n\nHow This Helps You Show \u201cHigh-Level GenAI Use\u201d\n\nYou could document:\n\nAI-assisted schema design from CSV sample\n\nAI-generated SQL import script\n\nAI-assisted normalisation strategy\n\nAI-suggested indexing strategy\n\nAI-generated analytics ideas\n\nAI-assisted performance tuning\n\nAI-generated test cases\n\nThat hits the marking criteria beautifully.\n\nImportant Question Now\n\nBefore we design properly:\n\nWhich WoW domain interests you most?\n\n\ud83d\udc09 Raid performance & meta analysis\n\n\u2694\ufe0f Character builds & gear optimisation\n\n\ud83d\udcb0 Auction house & economy analytics\n\n\ud83d\udcdc Lore / quest progression analytics\n\n\ud83c\udfc6 PvP rating & arena statistics\n\nPick one, and I\u2019ll design:\n\nDataset strategy\n\nDatabase schema\n\nCRUD model\n\nRequired endpoints\n\nAdvanced analytics endpoints\n\nJustification text you can use in your report\n\nLet\u2019s build something genuinely cool.\n\nCan you find any other video game based datasets that may be more appropriate than the options that may be available for from World of Warcraft? e.g. the steam games dataset\n\nAbsolutely \u2014 there are several video game\u2013centric datasets beyond World of Warcraft that would be very suitable for your API project, especially ones that lend themselves to interesting analytics and clear SQL modeling rather than just static CRUD. Most importantly, these are structured tabular datasets that can be imported into a SQL database and explored with analytic endpoints \u2014 perfect for your assignment.\n\nHere\u2019s a curated shortlist of strong options:\n\n\ud83c\udfae 1. Steam Games Datasets\n\nThese are among the most popular and well-structured video game datasets available on Kaggle.\n\n\ud83d\udd79\ufe0f Steam Games Dataset (Multiple Versions)\n\nOffers big tabular data with Steam game metadata such as game title, genre, release date, pricing, ratings and other features.\n\nSome versions include user behavior data like playtime and purchase counts, which opens the door to trends and engagement analytics.\n\nLarger collections (~40,000+ games) with detailed attributes suitable for filtering, grouping, and aggregations.\n\n\ud83d\udca1 Possible API use cases\n\nAnalytics: top genres by player count, trending games by playtime, average playtime by genre, price distributions over time.\n\nCRUD: user bookmarks, \u201cwant to play\u201d lists, custom game tags/ratings.\n\n\ud83d\uddc3\ufe0f 2. Steam Games Metadata + User Reviews (2020\u20132024)\n\nA rich structured dataset that pairs game metadata with user reviews and sentiment data.\n\n\ud83d\udccc Contains:\n\nGame metadata (genre, price, release date)\n\nUser reviews with ratings and language information\n\nEnables text analytics combined with traditional SQL aggregation\n\n\ud83d\udca1 Possible API endpoints\n\n/reviews/average-rating?game=\u2026\n\n/analytics/sentiment-trends?genre=\u2026\n\nText search + recommendation endpoints\n\n\u26a0\ufe0f Note: Review text can be large \u2014 you will likely want to store text separately or truncate it based on use case.\n\n\ud83d\udcca 3. Popular Video Games Dataset\n\nGeneral dataset listing popular titles with assorted features suitable for high-level game insights.\n\nPossible fields might include:\n\nGame name\n\nGenre\n\nRatings\n\nRelease year\n\n\ud83d\udca1 Analytics ideas\n\nSales or popularity trend analysis by year/genre\n\nGenre vs rating comparisons\n\nFiltering by platform or release decade\n\n\ud83d\udcc8 4. Video Game Sales + Ratings\n\nPairing sales figures with critic/user ratings for individual games.\n\nCould include:\n\nGame title\n\nPlatform\n\nSales by region\n\nCritic scores\n\n\ud83d\udca1 API analytics ideas\n\nBest selling games by year or region\n\nCritic score vs sales correlations\n\nTop genres by sales performance\n\n\ud83d\udd79\ufe0f 5. Global Video Game Sales (VGChartz)\n\nA structured global sales dataset with regional breakdowns (NA, EU, JP, etc.).\n\n\ud83d\udca1 Strong for analytics if you want:\n\nRegional market comparisons\n\nTime series of sales by platform\n\nGenre performance\n\n\ud83e\udde0 What Makes These Better Than a WoW-Only Dataset?\n\u2714\ufe0f Structured Tabular Data\n\nThese datasets are already organized in spreadsheets (CSV/JSON), making them easy to import into SQL.\n\n\u2714\ufe0f Multiple Dimensions\n\nYou get genre, platform, ratings, sales, review behavior, and playtime \u2014 all great for analytic endpoints.\n\n\u2714\ufe0f Large Enough for Analytics\n\nEspecially steam datasets \u2014 tens of thousands of rows with many attributes.\n\n\u2714\ufe0f Lots of Creative Endpoint Ideas\n\nNot just CRUD:\n\nTrend analysis\n\nAggregations\n\nText/sentiment analytics\n\nCross-filtering results\n\n\ud83d\udccc Example API Project Ideas Using These\n\ud83c\udfaf Steam Gaming Insights API\n\nCRUD:\n\nUserFavoriteGame\n\nUserPlatformPreference\n\nUserCustomTag\n\nAnalytics:\n\n/analytics/top-played?period=year\n\n/analytics/genre-popularity\n\n/analytics/price-vs-rating\n\n/analytics/review-sentiment?game=\u2026\n\n\ud83d\ude80 Technical Stack Suggestion (Good Fit)\n\nFastAPI + PostgreSQL\n\nEasy to load CSV \u2192 SQL\n\nFast async endpoints\n\nGreat for JSON APIs\n\nGood background querying support\n\nYou can clearly document:\n\n\u201cDataset imported into PostgreSQL with schema generated by AI, enabling analytical endpoints beyond CRUD.\u201d\n\nThat fits your brief for \u201chigh level use of GenAI\u2026 creative exploration.\u201d\n\n\ud83d\udccc Next Step\n\nTell me which of these datasets you\u2019re most excited by (Steam metadata + reviews, Steam playtime behavior, global sales & ratings, or something else) and I\u2019ll:\n\nPropose a database schema\n\nDefine API endpoints (CRUD + analytics)\n\nOutline SQL import scripts\n\nDraft report text justifying stack and AI usage\n\nJust pick one dataset direction to start!\n\nI like the sound of option 1.  let's explore that one\nThought for 17s\n\nYep \u2014 the Steam games route is very appropriate for your assignment, and (in practice) often cleaner than WoW datasets because Steam data tends to be:\n\nstrongly tabular (CSV/JSON \u2192 SQL import is straightforward),\n\nrich in attributes (genres/tags/price/release date/reviews/owners),\n\nnaturally suited to analytics endpoints.\n\nWhich Steam dataset \u201cversion\u201d is best?\n\nYou\u2019ve basically got 3 \u201cflavours\u201d that work great for a web services module:\n\n1) Storefront metadata (best default)\n\n\u201cSteam games complete dataset\u201d (40k+ games; CC0) is a strong choice for easy licensing + lots of fields + analytics potential.\n\nAlso good: FronkonGames Steam Games Dataset (built from Steam API + SteamSpy) \u2014 also very analytics-friendly.\n\n2) User behaviour (best for \u201cpersonalised\u201d analytics)\n\n\u201cSteam Video Games\u201d dataset: user-id, game-title, behavior-name (purchase/play), value (hours / 1). This is awesome for \u201crecommendations\u201d and playtime analytics, but it\u2019s less rich on game metadata unless you join to a separate games table.\n\n3) Reviews text (powerful but heavy)\n\nSteam Reviews datasets can be millions of rows and are more NLP-heavy than web-services-heavy (still doable, but scope can explode).\n\nRecommendation for your project: start with (1) Storefront metadata (trolukovich or fronkongames). If you want to go \u201cextra\u201d, add (2) user behaviour as a second table/source.\n\nA concrete API concept that fits your rubric well\n\u201cSteam Store Insights API\u201d\nPublic dataset in SQL\n\nTables derived from the dataset:\n\ngames (appid, name, release_date, price, developer, publisher, \u2026)\n\ngenres + game_genres (many-to-many)\n\ntags + game_tags (many-to-many)\n\noptional platforms fields (windows/mac/linux) if present\n\nThis schema is very report-friendly because you can justify normalization + relational joins.\n\nYour CRUD model (student-created data)\n\nPick something you \u201cown\u201d (so CRUD makes sense):\n\nuser_lists (e.g., \u201cwishlist\u201d, \u201cbacklog\u201d, \u201cco-op night\u201d)\n\nlist_items (game_id + personal notes + priority)\n\noptional user_ratings (your own ratings, not Steam\u2019s)\n\noptional custom_tags (user-defined tags like \u201ccozy\u201d, \u201cgreat soundtrack\u201d)\n\nThat gives clean CRUD without trying to \u201cCRUD Kaggle\u2019s dataset\u201d.\n\nEndpoints (minimum + analytics that earn marks)\nCRUD endpoints (example set)\n\nPOST /lists create a list\n\nGET /lists/{id} read list + items\n\nPATCH /lists/{id} update list name/visibility\n\nDELETE /lists/{id} delete list\n\nPOST /lists/{id}/items add a game to a list\n\nDELETE /lists/{id}/items/{game_id} remove from list\n\n(That\u2019s already well beyond the minimum 4 endpoints.)\n\nAnalytics endpoints (where you stand out)\n\nGET /analytics/genre-trends?from=YYYY-MM&to=YYYY-MM\n\ngames released per genre per month/year\n\nGET /analytics/price-distribution?genre=Indie\n\nhistogram buckets (returned as JSON counts)\n\nGET /analytics/value-picks?max_price=10&min_review_ratio=0.85\n\n\u201cbest reviewed under \u00a3X\u201d using positive/negative review counts if available\n\nGET /recommendations/similar?appid=620\n\nsimilarity using overlapping tags/genres (pure SQL possible)\n\nGET /analytics/publisher-leaderboard?metric=avg_rating&min_games=20\n\nThis is the kind of stuff lecturers love because it\u2019s clearly \u201cweb services + data\u201d.\n\nStack suggestion (simple to build, easy to justify)\n\nFastAPI + PostgreSQL + SQLAlchemy + Alembic\n\nFastAPI gives you automatic OpenAPI docs (great for demos/marking).\n\nPostgres handles aggregates + indexing well as your dataset grows.\n\nThis stack also makes it easy to say: \u201cSQL chosen due to relational structure (games\u2013tags\u2013genres many-to-many) and analytic queries.\u201d\n\nHow to use GenAI in a way you can prove in the report\n\nFor high marks under \u201ccreative thinking + exploration\u201d, you can explicitly log prompts/outputs for:\n\nturning a CSV column list into a normalized schema (games/tags/genres junction tables),\n\ngenerating an import script + cleaning rules (dates/prices/nulls),\n\nproposing analytics endpoints and edge cases,\n\ngenerating test cases (invalid inputs, pagination, 404/409/422 scenarios),\n\nsuggesting indexes after you profile slow queries.\n\nNext step (pick 1 of these, and we\u2019ll lock the design)\n\nA) Single dataset: \u201cSteam games complete dataset\u201d only (simpler, plenty of analytics).\nB) Two datasets: storefront metadata + \u201cSteam Video Games\u201d behaviour for playtime/purchase analytics + better recs (more impressive).\n\nIf you tell me whether you want A or B, I\u2019ll immediately propose:\n\na finalized database schema (tables + keys),\n\na clean endpoint list (CRUD + analytics),\n\nand a short \u201ctech choice justification\u201d paragraph you can paste into the report.\n\nSo for the CRUD part, accoridng to the rubric, am I supposed to show examples of being able toc reate, read, update and delete a custom item from the dataset?\n\nGreat question \u2014 this is very important to get right.\n\nShort answer:\n\n\u274c You are not expected to CRUD the public dataset itself (e.g., add/remove Steam games from Kaggle data).\n\u2705 You are expected to implement CRUD on at least one data model in your own system that is stored in a SQL database.\n\nWhat the rubric actually means\n\nThe key line is:\n\n\u201cimplement at least one data model involving all four elements of CRUD functionality linked to a database\u201d\n\nIt does not say:\n\n\u201cCRUD the imported dataset\u201d\n\n\u201cAllow modification of external data\u201d\n\n\u201cMake Kaggle data editable\u201d\n\nInstead, it requires:\n\n\u2714 A database-backed model\n\u2714 Create\n\u2714 Read\n\u2714 Update\n\u2714 Delete\n\u2714 Proper HTTP status codes\n\u2714 JSON responses\n\nIn your Steam API context\n\nYou will likely have:\n\n1\ufe0f\u20e3 Imported public dataset (read-only)\n\nExample table:\n\ngames\n\nThis data is:\n\nimported once\n\nstored in SQL\n\nused for analytics\n\nusually treated as read-only\n\nThat\u2019s completely fine academically.\n\n2\ufe0f\u20e3 Your own CRUD model (this is what satisfies the rubric)\n\nFor example:\n\nOption A \u2013 User Lists\nlists\nlist_items\n\nYou demonstrate:\n\nOperation\tExample Endpoint\nCREATE\tPOST /lists\nREAD\tGET /lists/{id}\nUPDATE\tPATCH /lists/{id}\nDELETE\tDELETE /lists/{id}\n\nThat satisfies the requirement perfectly.\n\nOption B \u2013 User Ratings\nuser_ratings\nOperation\tExample\nCREATE\tPOST /ratings\nREAD\tGET /ratings/{id}\nUPDATE\tPUT /ratings/{id}\nDELETE\tDELETE /ratings/{id}\n\nAlso valid.\n\nWhy you should NOT CRUD the Kaggle dataset\n\nFrom a design perspective:\n\nKaggle data is historical / reference data\n\nModifying it would break referential integrity\n\nIt\u2019s logically \u201cexternal data\u201d\n\nIt complicates your justification\n\nAcademically, it is cleaner to:\n\nTreat imported dataset as authoritative reference data\nAllow CRUD on user-generated entities only\n\nThis mirrors real-world APIs:\n\nSpotify doesn\u2019t let you CRUD songs\n\nSteam doesn\u2019t let users CRUD games\n\nYou CRUD playlists / reviews / ratings\n\nHow to explain this in your report (very good marks move)\n\nYou can write something like:\n\n\u201cThe imported Steam dataset is treated as authoritative reference data and is read-only within the system. CRUD functionality is implemented for user-generated resources (e.g., lists and ratings), ensuring compliance with the assignment requirement while preserving data integrity.\u201d\n\nThat shows architectural thinking.\n\nWhat examiners usually look for\n\nThey want to see that you:\n\nUnderstand REST conventions\n\nUse correct status codes (201, 200, 204, 404, 400, etc.)\n\nHandle invalid input\n\nStore and retrieve from SQL properly\n\nDemonstrate the full lifecycle of a resource\n\nThey are not expecting you to \u201cedit Steam itself.\u201d\n\nThe Cleanest Design for You\n\nI recommend:\n\nPublic dataset (read-only):\n\ngames\n\ngenres\n\ntags\n\nYour CRUD model:\n\nuser_lists\n\nlist_items\n\nThat gives you:\n\nOne-to-many relationship\n\nForeign key to games\n\nGood validation cases (404 if game doesn\u2019t exist)\n\nEasy to demonstrate in Postman\n\nIf you'd like, I can now:\n\nDesign the exact database schema (tables + keys)\n\nDefine the minimum required endpoints to pass\n\nThen extend it into distinction-level analytics endpoints\n\nReady to formalise the architecture?"
+            ]
+          },
+          "create_time": 1772458291.852,
+          "end_turn": null,
+          "id": "e58194cd-4f37-45f8-9f6e-4e2780e673c1",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "ffdfdbe8-ff01-43e5-b010-8cef919e57b7",
+            "resolved_model_slug": "gpt-5-2",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "7b64751a-a020-4fe3-84c2-c81fd56ca113"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "3235e21d-fd9f-40ac-91c8-44ac36419e82"
+      },
+      "e7d52c4a-931b-43dc-b124-bf7249cc42db": {
+        "children": [
+          "80a31aad-a8f4-42f0-8f45-1b193d1ebdab"
+        ],
+        "id": "e7d52c4a-931b-43dc-b124-bf7249cc42db",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Can you please summarise this entire conversation? I am building a \"high-level use of GenAI\" document, and would like to know the kinds of tehcniques i used here (remember this conversation is essentially the followup from a previous one, with said conversation's chat history contained in the first prompt).\n\nPlease list all of my prompts (not verbatim if too long), and explain the tehcnique i used, it's advantages, and portential disadvantages/drawbacks."
+            ]
+          },
+          "create_time": 1773174285.892,
+          "end_turn": null,
+          "id": "e7d52c4a-931b-43dc-b124-bf7249cc42db",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "ad6df5c1-9356-4634-b666-a68c8429b45d",
+            "resolved_model_slug": "gpt-5-3",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "ad4b8e14-f0ae-49fa-b789-53a46e04a522"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "33e61cfa-f422-4ee1-ba96-c8b9fd6d7eae"
+      },
+      "e8d3d992-fd5d-42b1-b8ab-d13518d584e4": {
+        "children": [
+          "68bd4725-3fbf-42db-ae0f-c83f5ac8d7a4"
+        ],
+        "id": "e8d3d992-fd5d-42b1-b8ab-d13518d584e4",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "user"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Can you give me some promopt suggestions for that conversation, which align with the objective: \"High level use of GenAI to aid creative thinking  and solution exploration.\""
+            ]
+          },
+          "create_time": 1772458440.772,
+          "end_turn": null,
+          "id": "e8d3d992-fd5d-42b1-b8ab-d13518d584e4",
+          "metadata": {
+            "can_save": false,
+            "developer_mode_connector_ids": [],
+            "message_source": null,
+            "request_id": "dcb0253c-b3c6-4cb7-b824-efeefef7fd2a",
+            "resolved_model_slug": "gpt-5-2",
+            "selected_github_repos": [],
+            "selected_sources": [],
+            "serialization_metadata": {
+              "custom_symbol_offsets": []
+            },
+            "turn_exchange_id": "1e247344-9384-4bdb-8a9f-9d240781d295"
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 1.0
+        },
+        "parent": "b6ec217a-e9ca-4cf0-9238-4e1eaf43b43c"
+      },
+      "edfd2257-1e9f-4fe9-8983-33b94221ade9": {
+        "children": [
+          "3235e21d-fd9f-40ac-91c8-44ac36419e82"
+        ],
+        "id": "edfd2257-1e9f-4fe9-8983-33b94221ade9",
+        "message": {
+          "author": {
+            "metadata": {},
+            "name": null,
+            "role": "system"
+          },
+          "channel": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "create_time": null,
+          "end_turn": true,
+          "id": "edfd2257-1e9f-4fe9-8983-33b94221ade9",
+          "metadata": {
+            "can_save": false,
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all",
+          "status": "finished_successfully",
+          "update_time": null,
+          "weight": 0.0
+        },
+        "parent": "client-created-root"
+      }
+    },
+    "memory_scope": "global_enabled",
+    "moderation_results": [],
+    "owner": null,
+    "pinned_time": null,
+    "plugin_ids": null,
+    "safe_urls": [
+      "https://download.logo.wine/logo/DICE_%28company%29/DICE_%28company%29-Logo.wine.png",
+      "https://images.openai.com/static-rsc-3/5YUUWkVonv3oXH6pgKezSrj7-klnIBD-WqMTYMMZP9clOLMqIDagCEeXkd6fZlncgKhV5CowMngLUQOJJDnt7DMKQBpRjgi6kqR0bVuGbRg?purpose=fullsize&v=1",
+      "https://www.data.gov.uk/",
+      "https://openweathermap.org/api",
+      "https://www.openai.com",
+      "https://static1.squarespace.com/static/6785146c9f2e5a4d12e7cf61/t/6798fcb96e0cc3774b98ba21/1766155133399/",
+      "https://digital.nhs.uk/data",
+      "https://www.kaggle.com/datasets"
+    ],
+    "sugar_item_id": null,
+    "sugar_item_visible": false,
+    "title": "GenAI Creative Solutions",
+    "update_time": 1773174328.030104,
+    "voice": null
+  }
