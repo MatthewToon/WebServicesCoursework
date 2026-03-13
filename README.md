@@ -19,6 +19,14 @@ A pdf version of the auto-generated API documentation is available here:
 
 [API Docs (PDF)](docs/api-docs.pdf)
 
+## Generative AI Chat Logs
+
+JSON files containing extracted chat logs are available here:
+
+["API Project Ideas"](docs/API-Project-Ideas-chat-log.json)
+
+
+
 ------------------------------------------------------------------------
 
 # Running the Project
